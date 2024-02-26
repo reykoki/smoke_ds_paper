@@ -1,0 +1,105 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\renewcommand{\UrlFont}{\rmfamily}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Ba et~al.(2019)Ba, Chen, Yuan, Song,, and Lo}]{smokenet}
+Ba, R., C.~Chen, J.~Yuan, W.~Song, and S.~Lo, 2019: Smokenet: Satellite smoke
+  scene detection using convolutional neural network with spatial and
+  channel-wise attention. \textit{Remote Sensing}, \textbf{11~(14)}, 1702.
+
+\bibitem[{Bah et~al.(2018)Bah, Gunshor,, and Schmit}]{true_color}
+Bah, M., M.~Gunshor, and T.~Schmit, 2018: Generation of goes-16 true color
+  imagery without a green band. \textit{Earth and Space Science},
+  \textbf{5~(9)}, 549--558.
+
+\bibitem[{Deng et~al.(2009)Deng, Li, Do, Su,, and Fei-Fei}]{imgnet}
+Deng, J., K.~Li, M.~Do, H.~Su, and L.~Fei-Fei, 2009: {Construction and Analysis
+  of a Large Scale Image Ontology}. Vision Sciences Society.
+
+\bibitem[{He et~al.(2015)He, Zhang, Ren,, and Sun}]{resnet}
+He, K., X.~Zhang, S.~Ren, and J.~Sun, 2015: Deep residual learning for image
+  recognition. \eprint{1512.03385}.
+
+\bibitem[{Iakubovskii(2019)}]{semantic}
+Iakubovskii, P., 2019: Segmentation models pytorch. GitHub,
+  \url{https://github.com/qubvel/segmentation_models.pytorch}.
+
+\bibitem[{Larsen et~al.(2021)Larsen, Hanigan, Reich, Qin, Cope, Morgan,, and
+  Rappold}]{larsen}
+Larsen, A., I.~Hanigan, B.~J. Reich, Y.~Qin, M.~Cope, G.~Morgan, and A.~G.
+  Rappold, 2021: A deep learning approach to identify smoke plumes in satellite
+  imagery in near-real time for health risk communication. \textit{Journal of
+  exposure science \& environmental epidemiology}, \textbf{31~(1)}, 170--176.
+
+\bibitem[{McNamara et~al.(2004)McNamara, Stephens, Ruminski,, and
+  Kasheta}]{hms}
+McNamara, D., G.~Stephens, M.~Ruminski, and T.~Kasheta, 2004: The hazard
+  mapping system (hms) - noaa's multi-sensor fire and smoke detection program
+  using environmental satellites. \textit{Conference on Satellite Meteorology
+  and Oceanography}.
+
+\bibitem[{Petty(2006)}]{petty}
+Petty, G., 2006: \textit{A First Course in Atmospheric Radiation}. Sundog Pub.
+
+\bibitem[{Randriambelo et~al.(1998)Randriambelo, Baldy, Bessafi, Petit,, and
+  Despinoy}]{thresh_geog}
+Randriambelo, T., S.~Baldy, M.~Bessafi, M.~Petit, and M.~Despinoy, 1998: An
+  improved detection and characterization of active fires and smoke plumes in
+  south-eastern africa and madagascar. \textit{International Journal of Remote
+  Sensing}, \textbf{19~(14)}, 2623--2638.
+
+\bibitem[{Raspaud et~al.(2018)}]{satpy}
+Raspaud, M., and Coauthors, 2018: Pytroll: An open-source, community-driven
+  python framework to process earth observation satellite data.
+  \textit{Bulletin of the American Meteorological Society}, \textbf{99~(7)},
+  1329--1336.
+
+\bibitem[{Razavian et~al.(2014)Razavian, Azizpour, Sullivan,, and
+  Carlsson}]{transfer2}
+Razavian, A.~S., H.~Azizpour, J.~Sullivan, and S.~Carlsson, 2014: Cnn features
+  off-the-shelf: an astounding baseline for recognition. \eprint{1403.6382}.
+
+\bibitem[{Rolph et~al.(2009)}]{hysplit_ver}
+Rolph, G.~D., and Coauthors, 2009: Description and verification of the noaa
+  smoke forecasting system: the 2007 fire season. \textit{Weather and
+  Forecasting}, \textbf{24~(2)}, 361--378.
+
+\bibitem[{Ronneberger et~al.(2015)Ronneberger, Fischer,, and Brox}]{unet}
+Ronneberger, O., P.~Fischer, and T.~Brox, 2015: U-net: Convolutional networks
+  for biomedical image segmentation. \eprint{1505.04597}.
+
+\bibitem[{Schroeder et~al.(2008)Schroeder, Ruminski, Csiszar, Giglio, Prins,
+  Schmidt,, and Morisette}]{hms_val}
+Schroeder, W., M.~Ruminski, I.~Csiszar, L.~Giglio, E.~Prins, C.~Schmidt, and
+  J.~Morisette, 2008: Validation analyses of an operational fire monitoring
+  product: The hazard mapping system. \textit{International Journal of Remote
+  Sensing}, \textbf{29~(20)}, 6059--6066.
+
+\bibitem[{Sun et~al.(2017)Sun, Shrivastava, Singh,, and Gupta}]{data_size}
+Sun, C., A.~Shrivastava, S.~Singh, and A.~Gupta, 2017: Revisiting unreasonable
+  effectiveness of data in deep learning era. \eprint{1707.02968}.
+
+\bibitem[{Wang et~al.(2022)Wang, Yang, Liang, Zheng, Yin, Tian,, and
+  Cui}]{wang}
+Wang, Z., P.~Yang, H.~Liang, C.~Zheng, J.~Yin, Y.~Tian, and W.~Cui, 2022:
+  Semantic segmentation and analysis on sensitive parameters of forest fire
+  smoke using smoke-unet and landsat-8 imagery. \textit{Remote Sensing},
+  \textbf{14~(1)}, 45.
+
+\bibitem[{Wen and Burke(2021)Wen, and Burke}]{smoke_goes}
+Wen, J., and M.~Burke, 2021: Wildfire smoke plume segmentation using
+  geostationary satellite imagery. \textit{ArXiv}, \textbf{abs/2109.01637},
+  \urlprefix\url{https://api.semanticscholar.org/CorpusID:237416777}.
+
+\bibitem[{Yosinski et~al.(2014)Yosinski, Clune, Bengio,, and Lipson}]{transfer}
+Yosinski, J., J.~Clune, Y.~Bengio, and H.~Lipson, 2014: How transferable are
+  features in deep neural networks? \eprint{1411.1792}.
+
+\end{thebibliography}
