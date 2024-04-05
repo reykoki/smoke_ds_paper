@@ -1,6 +1,21 @@
 \relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{abbrvnat}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \citation{thresh_geog}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}{}\protected@file@percent }
 \citation{smokenet}
 \citation{larsen}
 \citation{smoke_goes}
@@ -12,69 +27,69 @@
 \citation{larsen}
 \citation{wang}
 \citation{pseudo}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of different studies including method used, dataset size, satellite source, number of channels used and if the detection is done at a pixel or image level.}}{4}{}\protected@file@percent }
-\newlabel{studies}{{1}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of different studies including method used, dataset size, satellite source, number of channels used and if the detection is done at a pixel or image level.}}{2}{table.1}\protected@file@percent }
+\newlabel{studies}{{1}{2}{Comparison of different studies including method used, dataset size, satellite source, number of channels used and if the detection is done at a pixel or image level}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{2}{section.2}\protected@file@percent }
 \citation{hms,hms_val}
 \citation{hysplit_ver}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{5}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Satellite imagery captured by GOES-EAST within a few days of each other. The yellow, orange and red contours indicate the extent of Light, Medium and Heavy smoke. a) shows a canonical example of a smoke plume. b) and c) show variations in the density labels. b) we show Medium and Heavy densities of smoke that, upon visual inspection, could be interpreted as less dense than portions of the Light density smoke labeled in c).}}{6}{}\protected@file@percent }
-\newlabel{densities}{{1}{6}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces A comparison of one-hot encoding used for categorical data to thermometer encoding for ordinal data.}}{7}{}\protected@file@percent }
-\newlabel{therm}{{2}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Satellite imagery captured by GOES-EAST within a few days of each other. The yellow, orange and red contours indicate the extent of Light, Medium and Heavy smoke. a) shows a canonical example of a smoke plume. b) and c) show variations in the density labels. b) we show Medium and Heavy densities of smoke that, upon visual inspection, could be interpreted as less dense than portions of the Light density smoke labeled in c).}}{3}{figure.1}\protected@file@percent }
+\newlabel{densities}{{1}{3}{Satellite imagery captured by GOES-EAST within a few days of each other. The yellow, orange and red contours indicate the extent of Light, Medium and Heavy smoke. a) shows a canonical example of a smoke plume. b) and c) show variations in the density labels. b) we show Medium and Heavy densities of smoke that, upon visual inspection, could be interpreted as less dense than portions of the Light density smoke labeled in c)}{figure.1}{}}
 \citation{satpy}
 \citation{true_color}
-\newlabel{timelapse}{{2}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces True Color GOES imagery from May 2022, Southeast New Mexico (31$^{\circ }$ Latitude, -100$^{\circ }$ Longitude) during the start of the Foster Fire. The HMS annotations for the smoke outlines shown here spanned from 19:10-23:00 UTC but visually match the smoke location for the last part of the time-window.}}{8}{}\protected@file@percent }
+\newlabel{timelapse}{{2}{4}{Time Windows For Smoke Annotations}{section*.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces True Color GOES imagery from May 2022, Southeast New Mexico (\(31^{\circ }\)N, \(100^{\circ }\)W) during the start of the Foster Fire. The HMS annotations for the smoke outlines shown here spanned from 19:10\textendash 23:00 UTC but visually match the smoke location for the last part of the timewindow.}}{4}{figure.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces A comparison of one-hot encoding used for categorical data to thermometer encoding for ordinal data.}}{4}{table.2}\protected@file@percent }
+\newlabel{therm}{{2}{4}{A comparison of one-hot encoding used for categorical data to thermometer encoding for ordinal data}{table.2}{}}
 \citation{petty}
 \citation{petty}
-\citation{petty}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces To create a true color image, we use the following bands from the Advanced Baseline Imager Level 1b CONUS (ABI-L1b-RadC) product.}}{9}{}\protected@file@percent }
-\newlabel{rgb_bands}{{3}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Relationship between the size of a particle, the wavelength of light interacting with the particle and the type of scattering behavior induced by that interaction. The dotted lines represent rough estimates of the boundaries between the scattering regimes \citep  {petty}. The gray area represents the range of particle radius relevant to smoke particulate matter.}}{10}{}\protected@file@percent }
-\newlabel{regime}{{3}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces If the particle size is $<\frac  {1}{10}$ the wavelength of the interacting light, then the primary scattering will be Rayleigh. Mie scattering is the predominant scattering mechanism when the particle size is larger than wavelength of light.}}{10}{}\protected@file@percent }
-\newlabel{mei}{{4}{10}}
-\newlabel{16_vs_17}{{2}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces True Color GOES-EAST (left) and GOES-WEST (right) imagery from April $24^{th}$, 2022. The images were taken about 1.5 hours before sunset for this geolocation and time of year (01:43 UTC).}}{11}{}\protected@file@percent }
-\newlabel{16vs17}{{5}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The three bands of GOES-EAST data are the raw input to generate the True Color image shown in figure \ref {16vs17}. There appears to be a higher signal-to-noise ratio for smoke detection as the wavelength, $\lambda $, of light being measured decreases.}}{11}{}\protected@file@percent }
-\newlabel{bands}{{6}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces To create a true color image, we use the following bands from the ABI Level 1b CONUS (ABI-L1b-RadC) product.}}{5}{table.3}\protected@file@percent }
+\newlabel{rgb_bands}{{3}{5}{To create a true color image, we use the following bands from the ABI Level 1b CONUS (ABI-L1b-RadC) product}{table.3}{}}
 \citation{resnet}
 \citation{unet}
 \citation{transfer}
 \citation{transfer2}
 \citation{imgnet}
 \citation{semantic}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Relationship between the size of a particle, the wavelength of light interacting with the particle and the type of scattering behavior induced by that interaction. The dotted lines represent rough estimates of the boundaries between the scattering regimes \citep  {petty}. The gray area represents the range of particle radius relevant to smoke particulate matter.}}{6}{figure.3}\protected@file@percent }
+\newlabel{regime}{{3}{6}{Relationship between the size of a particle, the wavelength of light interacting with the particle and the type of scattering behavior induced by that interaction. The dotted lines represent rough estimates of the boundaries between the scattering regimes \citep {petty}. The gray area represents the range of particle radius relevant to smoke particulate matter}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces If the particle size is \(<\frac  {1}{10}\) the wavelength of the interacting light, then the primary scattering will be Rayleigh. Mie scattering is the predominant scattering mechanism when the particle size is larger than wavelength of light.}}{6}{figure.4}\protected@file@percent }
+\newlabel{mei}{{4}{6}{If the particle size is \(<\frac {1}{10}\) the wavelength of the interacting light, then the primary scattering will be Rayleigh. Mie scattering is the predominant scattering mechanism when the particle size is larger than wavelength of light}{figure.4}{}}
+\newlabel{16_vs_17}{{2}{7}{Satellite Imagery}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces True Color GOES-EAST (left) and GOES-WEST (right) imagery from April \(24^{th}\), 2022. The images were taken about 1.5 hours before sunset for this geolocation and time of year (01:43 UTC).}}{7}{figure.5}\protected@file@percent }
+\newlabel{16vs17}{{5}{7}{True Color GOES-EAST (left) and GOES-WEST (right) imagery from April \(24^{th}\), 2022. The images were taken about 1.5 hours before sunset for this geolocation and time of year (01:43 UTC)}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The three bands of GOES-EAST data are the raw input to generate the True Color image shown in figure \ref {16vs17}. There appears to be a higher signal-to-noise ratio for smoke detection as the wavelength, \(\lambda \), of light being measured decreases.}}{7}{figure.6}\protected@file@percent }
+\newlabel{bands}{{6}{7}{The three bands of GOES-EAST data are the raw input to generate the True Color image shown in figure \ref {16vs17}. There appears to be a higher signal-to-noise ratio for smoke detection as the wavelength, \(\lambda \), of light being measured decreases}{figure.6}{}}
 \citation{conf_thresh}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A smoke annotation projected onto GOES-WEST imagery from August 2022 that spans from 11:00 UTC to 15:00 UTC, sunrise on August 2nd, 2022 at coordinates (49°24'N, 115°29'W) was 12:15 UTC. 15 minutes after the calculated sunrise, the imagery contains a noticeably higher levels of noise than the subsequent imagery that's light travels through (thus interacts with) less atmosphere as the sun rises and the angle between GOES-WEST and the sun decreases. }}{13}{}\protected@file@percent }
-\newlabel{G17_sunrise}{{7}{13}}
-\newlabel{iou}{{1}{13}}
-\newlabel{overall_iou}{{2}{14}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Conclusion}{14}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces IoU results per density of smoke and over all densities.}}{15}{}\protected@file@percent }
-\newlabel{iou_results}{{4}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces GOES-WEST imagery showing smoke on June 8th, 2022 in Alaska where at the coordinates (61°03'N, 156°07'W), daylight was between 12:43-7:53 UTC. The smoke annotations displayed span from 18:50 to 23:50 UTC. a) shows the imagery that was selected using the Mie algorithm, which optimizes for the image closest to sunrise. b) shows the imagery chosen by the pseudo-label that had the highest IoU score. The IoU scores are similar for the low and medium density smoke, but the high density smoke IoU for a) is .01 while b) is significantly higher at .59.}}{16}{}\protected@file@percent }
-\newlabel{ml_vs_mei}{{8}{16}}
-\bibstyle{ametsocV6}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A smoke annotation projected onto GOES-WEST imagery from August 2022 that spans from 11:00 UTC to 15:00 UTC, sunrise on August 2nd, 2022 at coordinates (49°24'N, 115°29'W) was 12:15 UTC. 15 minutes after the calculated sunrise, the imagery contains a noticeably higher levels of noise than the subsequent imagery that's light travels through (thus interacts with) less atmosphere as the sun rises and the angle between GOES-WEST and the sun decreases. }}{8}{figure.7}\protected@file@percent }
+\newlabel{G17_sunrise}{{7}{8}{A smoke annotation projected onto GOES-WEST imagery from August 2022 that spans from 11:00 UTC to 15:00 UTC, sunrise on August 2nd, 2022 at coordinates (49°24'N, 115°29'W) was 12:15 UTC. 15 minutes after the calculated sunrise, the imagery contains a noticeably higher levels of noise than the subsequent imagery that's light travels through (thus interacts with) less atmosphere as the sun rises and the angle between GOES-WEST and the sun decreases}{figure.7}{}}
+\newlabel{iou}{{1}{8}{Machine Learning Model}{equation.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces IoU results per density of smoke and over all densities.}}{9}{table.4}\protected@file@percent }
+\newlabel{iou_results}{{4}{9}{IoU results per density of smoke and over all densities}{table.4}{}}
+\newlabel{overall_iou}{{2}{9}{Results}{equation.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Limitations}{9}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{9}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Acknowledgments and Disclosure of Funding}{9}{section.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces GOES-WEST imagery showing smoke on June 8th, 2022 in Alaska where at the coordinates (61°03'N, 156°07'W), daylight was between 12:43-7:53 UTC. The smoke annotations displayed span from 18:50 to 23:50 UTC. a) shows the imagery that was selected using the Mie algorithm, which optimizes for the image closest to sunrise. b) shows the imagery chosen by the pseudo-label that had the highest IoU score. The IoU scores are similar for the low and medium density smoke, but the high density smoke IoU for a) is .01 while b) is significantly higher at .59.}}{10}{figure.8}\protected@file@percent }
+\newlabel{ml_vs_mei}{{8}{10}{GOES-WEST imagery showing smoke on June 8th, 2022 in Alaska where at the coordinates (61°03'N, 156°07'W), daylight was between 12:43-7:53 UTC. The smoke annotations displayed span from 18:50 to 23:50 UTC. a) shows the imagery that was selected using the Mie algorithm, which optimizes for the image closest to sunrise. b) shows the imagery chosen by the pseudo-label that had the highest IoU score. The IoU scores are similar for the low and medium density smoke, but the high density smoke IoU for a) is .01 while b) is significantly higher at .59}{figure.8}{}}
 \bibdata{references}
-\bibcite{smokenet}{{1}{2019}{{Ba et~al.}}{{Ba, Chen, Yuan, Song,, and Lo}}}
-\bibcite{true_color}{{2}{2018}{{Bah et~al.}}{{Bah, Gunshor,, and Schmit}}}
-\bibcite{imgnet}{{3}{2009}{{Deng et~al.}}{{Deng, Li, Do, Su,, and Fei-Fei}}}
-\bibcite{conf_thresh}{{4}{2023}{{Ferreira et~al.}}{{Ferreira, Lee,, and D{\'o}rea}}}
-\bibcite{resnet}{{5}{2015}{{He et~al.}}{{He, Zhang, Ren,, and Sun}}}
+\bibcite{smokenet}{{1}{2019}{{Ba et~al.}}{{Ba, Chen, Yuan, Song, and Lo}}}
+\bibcite{true_color}{{2}{2018}{{Bah et~al.}}{{Bah, Gunshor, and Schmit}}}
+\bibcite{imgnet}{{3}{2009}{{Deng et~al.}}{{Deng, Li, Do, Su, and Fei-Fei}}}
+\bibcite{conf_thresh}{{4}{2023}{{Ferreira et~al.}}{{Ferreira, Lee, and D{\'o}rea}}}
+\bibcite{resnet}{{5}{2015}{{He et~al.}}{{He, Zhang, Ren, and Sun}}}
 \bibcite{semantic}{{6}{2019}{{Iakubovskii}}{{}}}
-\bibcite{larsen}{{7}{2021}{{Larsen et~al.}}{{Larsen, Hanigan, Reich, Qin, Cope, Morgan,, and Rappold}}}
+\bibcite{larsen}{{7}{2021}{{Larsen et~al.}}{{Larsen, Hanigan, Reich, Qin, Cope, Morgan, and Rappold}}}
 \bibcite{pseudo}{{8}{2013}{{Lee}}{{}}}
-\bibcite{hms}{{9}{2004}{{McNamara et~al.}}{{McNamara, Stephens, Ruminski,, and Kasheta}}}
+\bibcite{hms}{{9}{2004}{{McNamara et~al.}}{{McNamara, Stephens, Ruminski, and Kasheta}}}
 \bibcite{petty}{{10}{2006}{{Petty}}{{}}}
-\bibcite{thresh_geog}{{11}{1998}{{Randriambelo et~al.}}{{Randriambelo, Baldy, Bessafi, Petit,, and Despinoy}}}
-\bibcite{satpy}{{12}{2018}{{Raspaud et~al.}}{{}}}
-\bibcite{transfer2}{{13}{2014}{{Razavian et~al.}}{{Razavian, Azizpour, Sullivan,, and Carlsson}}}
-\bibcite{hysplit_ver}{{14}{2009}{{Rolph et~al.}}{{}}}
-\bibcite{unet}{{15}{2015}{{Ronneberger et~al.}}{{Ronneberger, Fischer,, and Brox}}}
-\bibcite{hms_val}{{16}{2008}{{Schroeder et~al.}}{{Schroeder, Ruminski, Csiszar, Giglio, Prins, Schmidt,, and Morisette}}}
-\bibcite{data_size}{{17}{2017}{{Sun et~al.}}{{Sun, Shrivastava, Singh,, and Gupta}}}
-\bibcite{wang}{{18}{2022}{{Wang et~al.}}{{Wang, Yang, Liang, Zheng, Yin, Tian,, and Cui}}}
-\bibcite{smoke_goes}{{19}{2021}{{Wen and Burke}}{{Wen, and Burke}}}
-\bibcite{transfer}{{20}{2014}{{Yosinski et~al.}}{{Yosinski, Clune, Bengio,, and Lipson}}}
-\gdef \@abspage@last{18}
+\bibcite{thresh_geog}{{11}{1998}{{Randriambelo et~al.}}{{Randriambelo, Baldy, Bessafi, Petit, and Despinoy}}}
+\bibcite{satpy}{{12}{2018}{{Raspaud et~al.}}{{Raspaud, Hoese, Dybbroe, Lahtinen, Devasthale, Itkin, Hamann, Rasmussen, Nielsen, Leppelt, et~al.}}}
+\bibcite{transfer2}{{13}{2014}{{Razavian et~al.}}{{Razavian, Azizpour, Sullivan, and Carlsson}}}
+\bibcite{hysplit_ver}{{14}{2009}{{Rolph et~al.}}{{Rolph, Draxler, Stein, Taylor, Ruminski, Kondragunta, Zeng, Huang, Manikin, McQueen, et~al.}}}
+\bibcite{unet}{{15}{2015}{{Ronneberger et~al.}}{{Ronneberger, Fischer, and Brox}}}
+\bibcite{hms_val}{{16}{2008}{{Schroeder et~al.}}{{Schroeder, Ruminski, Csiszar, Giglio, Prins, Schmidt, and Morisette}}}
+\bibcite{data_size}{{17}{2017}{{Sun et~al.}}{{Sun, Shrivastava, Singh, and Gupta}}}
+\bibcite{wang}{{18}{2022}{{Wang et~al.}}{{Wang, Yang, Liang, Zheng, Yin, Tian, and Cui}}}
+\bibcite{smoke_goes}{{19}{2021}{{Wen and Burke}}{{}}}
+\bibcite{transfer}{{20}{2014}{{Yosinski et~al.}}{{Yosinski, Clune, Bengio, and Lipson}}}
+\gdef \@abspage@last{12}

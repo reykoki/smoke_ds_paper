@@ -1,54 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: smoke.aux
-The style file: ametsocV6.bst
+The style file: abbrvnat.bst
 Database file #1: references.bib
-Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
 Warning--empty booktitle in imgnet
-Warning--missing publisher in resnet
-Warning--missing publisher in transfer2
-Warning--missing publisher in unet
-Warning--missing publisher in data_size
-Warning--missing publisher in transfer
 You've used 20 entries,
-            3493 wiz_defined-function locations,
-            978 strings with 10957 characters,
-and the built_in function-call counts, 17804 in all, are:
-= -- 1803
-> -- 883
+            2773 wiz_defined-function locations,
+            714 strings with 8694 characters,
+and the built_in function-call counts, 10568 in all, are:
+= -- 850
+> -- 880
 < -- 4
-+ -- 465
-- -- 222
-* -- 1027
-:= -- 2090
-add.period$ -- 40
++ -- 296
+- -- 276
+* -- 960
+:= -- 1688
+add.period$ -- 57
 call.type$ -- 20
-change.case$ -- 171
+change.case$ -- 149
 chr.to.int$ -- 20
-cite$ -- 26
-duplicate$ -- 1603
-empty$ -- 1009
-format.name$ -- 261
-if$ -- 3621
+cite$ -- 41
+duplicate$ -- 385
+empty$ -- 725
+format.name$ -- 298
+if$ -- 2132
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 216
-newline$ -- 71
+missing$ -- 15
+newline$ -- 105
 num.names$ -- 80
-pop$ -- 859
+pop$ -- 312
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 130
 quote$ -- 0
-skip$ -- 922
+skip$ -- 337
 stack$ -- 0
-substring$ -- 632
-swap$ -- 1115
+substring$ -- 241
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 177
-warning$ -- 6
-while$ -- 84
+type$ -- 215
+warning$ -- 1
+while$ -- 75
 width$ -- 0
-write$ -- 222
-(There were 6 warnings)
+write$ -- 251
+(There was 1 warning)
