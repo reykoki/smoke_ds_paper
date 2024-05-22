@@ -1,48 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2024/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: smoke.aux
 The style file: abbrvnat.bst
 Database file #1: references.bib
+Warning--entry type for "hms_web" isn't style-file defined
+--line 251 of file references.bib
 Warning--empty booktitle in imgnet
-You've used 20 entries,
+Warning--empty year in hms_web
+Warning--empty journal in wildfire_detect
+You've used 24 entries,
             2773 wiz_defined-function locations,
-            714 strings with 8694 characters,
-and the built_in function-call counts, 10568 in all, are:
-= -- 850
-> -- 880
-< -- 4
-+ -- 296
-- -- 276
-* -- 960
-:= -- 1688
-add.period$ -- 57
-call.type$ -- 20
-change.case$ -- 149
-chr.to.int$ -- 20
-cite$ -- 41
-duplicate$ -- 385
-empty$ -- 725
-format.name$ -- 298
-if$ -- 2132
+            736 strings with 9449 characters,
+and the built_in function-call counts, 12131 in all, are:
+= -- 1002
+> -- 929
+< -- 5
++ -- 312
+- -- 288
+* -- 1084
+:= -- 1911
+add.period$ -- 71
+call.type$ -- 24
+change.case$ -- 167
+chr.to.int$ -- 24
+cite$ -- 51
+duplicate$ -- 465
+empty$ -- 884
+format.name$ -- 316
+if$ -- 2468
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 15
-newline$ -- 105
-num.names$ -- 80
-pop$ -- 312
+missing$ -- 17
+newline$ -- 127
+num.names$ -- 96
+pop$ -- 347
 preamble$ -- 1
-purify$ -- 130
+purify$ -- 143
 quote$ -- 0
-skip$ -- 337
+skip$ -- 393
 stack$ -- 0
-substring$ -- 241
-swap$ -- 22
+substring$ -- 317
+swap$ -- 26
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 215
-warning$ -- 1
-while$ -- 75
+type$ -- 264
+warning$ -- 3
+while$ -- 91
 width$ -- 0
-write$ -- 251
-(There was 1 warning)
+write$ -- 303
+(There were 4 warnings)
