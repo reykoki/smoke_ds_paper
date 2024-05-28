@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.1)  28 MAY 2024 15:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.1)  28 MAY 2024 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,12 +559,12 @@ Package pdftex.def Info: figures/G16_v_G17.png  used on input line 214.
 (pdftex.def)             Requested size: 341.43306pt x 170.71451pt.
 
 [5 <./figures/timelapse.png>]
-<figures/GOES16_bands.png, id=134, 1387.584pt x 715.473pt>
+<figures/GOES16_bands.png, id=135, 1387.584pt x 715.473pt>
 File: figures/GOES16_bands.png Graphic file (type png)
 <use figures/GOES16_bands.png>
 Package pdftex.def Info: figures/GOES16_bands.png  used on input line 222.
 (pdftex.def)             Requested size: 284.52756pt x 146.70566pt.
-<figures/timelapse_G17_2.png, id=139, 1445.4pt x 505.89pt>
+<figures/timelapse_G17_2.png, id=138, 1445.4pt x 505.89pt>
 File: figures/timelapse_G17_2.png Graphic file (type png)
 <use figures/timelapse_G17_2.png>
 Package pdftex.def Info: figures/timelapse_G17_2.png  used on input line 232.
@@ -578,7 +578,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./figures/mei.png> <./figures/G16_v_G17.png>] [7 <./figures/GOES16_bands.p
 ng> <./figures/timelapse_G17_2.png>]
-<figures/D_m_vs_D_pl.png, id=175, 1558.3821pt x 451.6875pt>
+<figures/D_m_vs_D_pl.png, id=172, 1558.3821pt x 451.6875pt>
 File: figures/D_m_vs_D_pl.png Graphic file (type png)
 <use figures/D_m_vs_D_pl.png>
 Package pdftex.def Info: figures/D_m_vs_D_pl.png  used on input line 280.
@@ -603,10 +603,10 @@ Package rerunfilecheck Info: File `smoke.out' has not changed.
 (rerunfilecheck)             Checksum: 2350EF2160A72CD4E5070376A37E4C9B;632.
  ) 
 Here is how much of TeX's memory you used:
- 13019 strings out of 474963
- 202747 string characters out of 5774096
+ 13018 strings out of 474963
+ 202739 string characters out of 5774096
  1946187 words of memory out of 5000000
- 34850 multiletter control sequences out of 15000+600000
+ 34849 multiletter control sequences out of 15000+600000
  593705 words of font info for 188 fonts, out of 8000000 for 9000
  725 hyphenation exceptions out of 8191
  72i,10n,79p,1931b,606s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -620,10 +620,10 @@ hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist
 w/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on smoke.pdf (11 pages, 22604203 bytes).
+Output written on smoke.pdf (11 pages, 22604155 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
+ 283 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
  67 named destinations out of 1000 (max. 500000)
  38988 words of extra memory for PDF output out of 42996 (max. 10000000)
 
