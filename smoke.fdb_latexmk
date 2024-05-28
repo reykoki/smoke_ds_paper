@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex smoke"] 1716409359.62837 "smoke.aux" "smoke.bbl" "smoke" 1716409613.86548 0
-  "./references.bib" 1716401627.87764 10644 e7bdc5615274bf08d2bd390b1d971410 ""
+["bibtex smoke"] 1716932316.2807 "smoke.aux" "smoke.bbl" "smoke" 1716932456.46829 0
+  "./references.bib" 1716931173.189 11480 089d45fa5540c66c38f89b7d8f7731a1 ""
   "/usr/share/texmf-dist/bibtex/bst/natbib/abbrvnat.bst" 1713199481 26532 66bed5cc59495faaa3f9ae9af9fa5e42 ""
-  "smoke.aux" 1716409613.63807 9755 78b65a6d60da2c10cc78bfcfe6b10513 "pdflatex"
+  "smoke.aux" 1716932456.17907 10226 bb716aba37585c5b0471ce70aa912d4d "pdflatex"
   (generated)
   "smoke.bbl"
   "smoke.blg"
   (rewritten before read)
-["pdflatex"] 1716409608.2975 "smoke.tex" "smoke.pdf" "smoke" 1716409613.86564 0
+["pdflatex"] 1716932450.53734 "smoke.tex" "smoke.pdf" "smoke" 1716932456.46871 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1713199481 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1713199481 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1713199481 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -124,10 +124,10 @@
   "figures/timelapse.png" 1708987046.8769 8922327 3e321317d42dd391175e691e7dbf9fb1 ""
   "figures/timelapse_G17_2.png" 1708987046.81356 1267174 ba2bcec789e07bc4692a37bad512b7cb ""
   "neurips_2024.sty" 1712262387.41182 11625 b5f853b54a7a098e9e5b837f826d5daa ""
-  "smoke.aux" 1716409613.63807 9755 78b65a6d60da2c10cc78bfcfe6b10513 "pdflatex"
-  "smoke.bbl" 1716409359.69805 7252 0cc09abee669d87baeeeb15cac407e3f "bibtex smoke"
-  "smoke.out" 1716409613.63807 632 2350ef2160a72cd4e5070376a37e4c9b "pdflatex"
-  "smoke.tex" 1716409607.11473 36766 457cc374e6e5fcf3b4a6ce864d5c15ac ""
+  "smoke.aux" 1716932456.17907 10226 bb716aba37585c5b0471ce70aa912d4d "pdflatex"
+  "smoke.bbl" 1716932316.37907 8280 0cdd66b5f4a9dbefe765943c664b9c62 "bibtex smoke"
+  "smoke.out" 1716932456.18241 632 2350ef2160a72cd4e5070376a37e4c9b "pdflatex"
+  "smoke.tex" 1716932448.53907 37551 e1efdec56aeae51c9cb4db32c3cb185e ""
   (generated)
   "smoke.aux"
   "smoke.log"

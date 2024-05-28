@@ -3,6 +3,8 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \bibstyle{abbrvnat}
+\citation{smoke_monitoring}
+\citation{goes}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \citation{threshold}
 \citation{thresh_geog}
@@ -13,16 +15,19 @@
 \citation{data_size}
 \citation{wang}
 \citation{smoke_goes}
+\citation{cifar}
+\citation{mnist}
+\citation{imgnet}
 \citation{smokenet}
 \citation{smoke_goes}
 \citation{larsen}
 \citation{wang}
 \citation{pseudo}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of different studies including method used, dataset size, satellite source, number of channels used and if the detection is done at a pixel or image level.}}{2}{table.1}\protected@file@percent }
-\newlabel{studies}{{1}{2}{Comparison of different studies including method used, dataset size, satellite source, number of channels used and if the detection is done at a pixel or image level}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of different studies including method used, dataset size, satellite source, number of channels used and if classification is performed at a pixel or image level.}}{2}{table.1}\protected@file@percent }
+\newlabel{studies}{{1}{2}{Comparison of different studies including method used, dataset size, satellite source, number of channels used and if classification is performed at a pixel or image level}{table.1}{}}
 \citation{hms_web}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Satellite imagery captured by GOES-East within a few days of each other. The yellow, orange and red contours indicate the extent of Light, Medium and Heavy smoke. a) shows a canonical example of a smoke plume. b) and c) show variations in the density labels.}}{3}{figure.1}\protected@file@percent }
-\newlabel{densities}{{1}{3}{Satellite imagery captured by GOES-East within a few days of each other. The yellow, orange and red contours indicate the extent of Light, Medium and Heavy smoke. a) shows a canonical example of a smoke plume. b) and c) show variations in the density labels}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Satellite imagery captured by GOES-East within a few days of each other. The yellow, orange and red contours indicate the extent of Light, Medium and Heavy smoke. a) shows a canonical example of a smoke plume. b) and c) show observable variations in the density labels.}}{3}{figure.1}\protected@file@percent }
+\newlabel{densities}{{1}{3}{Satellite imagery captured by GOES-East within a few days of each other. The yellow, orange and red contours indicate the extent of Light, Medium and Heavy smoke. a) shows a canonical example of a smoke plume. b) and c) show observable variations in the density labels}{figure.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{3}{section.2}\protected@file@percent }
 \citation{therm_enc}
 \citation{satpy}
@@ -43,13 +48,13 @@
 \citation{transfer2}
 \citation{imgnet}
 \citation{semantic}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces If the particle size is \(<\frac  {1}{10}\) the wavelength of the interacting light, then the primary scattering will be Rayleigh. Mie scattering is the predominant scattering mechanism when the particle size is larger than wavelength of light. This schematic demonstrates that when the sun is setting in the West, the Mie scattering will forward scatter towards GOES-East.}}{6}{figure.3}\protected@file@percent }
-\newlabel{mei}{{3}{6}{If the particle size is \(<\frac {1}{10}\) the wavelength of the interacting light, then the primary scattering will be Rayleigh. Mie scattering is the predominant scattering mechanism when the particle size is larger than wavelength of light. This schematic demonstrates that when the sun is setting in the West, the Mie scattering will forward scatter towards GOES-East}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces If the particle size is \(<\frac  {1}{10}\) the wavelength of the interacting light, then the primary scattering will be Rayleigh. Mie scattering is the predominant scattering mechanism when the particle size is larger than wavelength of light. This schematic demonstrates that when the sun is setting in the West, the Mie scattering will predominately forward scatter towards GOES-East.}}{6}{figure.3}\protected@file@percent }
+\newlabel{mei}{{3}{6}{If the particle size is \(<\frac {1}{10}\) the wavelength of the interacting light, then the primary scattering will be Rayleigh. Mie scattering is the predominant scattering mechanism when the particle size is larger than wavelength of light. This schematic demonstrates that when the sun is setting in the West, the Mie scattering will predominately forward scatter towards GOES-East}{figure.3}{}}
 \newlabel{16_vs_17}{{2}{6}{Mie-Derived Dataset}{figure.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces True Color GOES-East (left) and GOES-West (right) imagery from April \(24^{th}\), 2022 in Durango, Mexico. The images were taken \(\sim 0.5\) hours before sunset (01:43 UTC) for this geolocation and time of year.}}{6}{figure.4}\protected@file@percent }
 \newlabel{16vs17}{{4}{6}{True Color GOES-East (left) and GOES-West (right) imagery from April \(24^{th}\), 2022 in Durango, Mexico. The images were taken \(\sim 0.5\) hours before sunset (01:43 UTC) for this geolocation and time of year}{figure.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Three bands of GOES-East data are the raw input to generate the True Color image shown in figure \ref {16vs17}. These plot show variations in signal-to-noise ratio for smoke detection in relation to the wavelength, \(\lambda \), of light being measured.}}{7}{figure.5}\protected@file@percent }
-\newlabel{bands}{{5}{7}{Three bands of GOES-East data are the raw input to generate the True Color image shown in figure \ref {16vs17}. These plot show variations in signal-to-noise ratio for smoke detection in relation to the wavelength, \(\lambda \), of light being measured}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Three bands of GOES-East data are the raw input to generate the True Color image shown in figure \ref {16vs17}. These plots show variations in the signal-to-noise ratio for smoke detection in relation to the wavelength, \(\lambda \), of light being measured.}}{7}{figure.5}\protected@file@percent }
+\newlabel{bands}{{5}{7}{Three bands of GOES-East data are the raw input to generate the True Color image shown in figure \ref {16vs17}. These plots show variations in the signal-to-noise ratio for smoke detection in relation to the wavelength, \(\lambda \), of light being measured}{figure.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces A smoke annotation projected onto GOES-West imagery from August 2022 that spans from 11:00 UTC to 15:00 UTC, sunrise on August 2nd, 2022 at coordinates (49°24'N, 115°29'W) was 12:15 UTC.}}{7}{figure.6}\protected@file@percent }
 \newlabel{G17_sunrise}{{6}{7}{A smoke annotation projected onto GOES-West imagery from August 2022 that spans from 11:00 UTC to 15:00 UTC, sunrise on August 2nd, 2022 at coordinates (49°24'N, 115°29'W) was 12:15 UTC}{figure.6}{}}
 \citation{conf_thresh}
@@ -62,29 +67,33 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3}Limitations}{9}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{9}{section.4}\protected@file@percent }
 \bibdata{references}
-\bibcite{smokenet}{{1}{2019}{{Ba et~al.}}{{Ba, Chen, Yuan, Song, and Lo}}}
-\bibcite{true_color}{{2}{2018}{{Bah et~al.}}{{Bah, Gunshor, and Schmit}}}
-\bibcite{therm_enc}{{3}{2018}{{Buckman et~al.}}{{Buckman, Roy, Raffel, and Goodfellow}}}
-\bibcite{imgnet}{{4}{2009}{{Deng et~al.}}{{Deng, Li, Do, Su, and Fei-Fei}}}
-\bibcite{conf_thresh}{{5}{2023}{{Ferreira et~al.}}{{Ferreira, Lee, and D{\'o}rea}}}
-\bibcite{resnet}{{6}{2015}{{He et~al.}}{{He, Zhang, Ren, and Sun}}}
-\bibcite{semantic}{{7}{2019}{{Iakubovskii}}{{}}}
-\bibcite{larsen}{{8}{2021}{{Larsen et~al.}}{{Larsen, Hanigan, Reich, Qin, Cope, Morgan, and Rappold}}}
-\bibcite{pseudo}{{9}{2013}{{Lee}}{{}}}
-\bibcite{goes_conv}{{10}{2021}{{Lee et~al.}}{{Lee, Kummerow, and Ebert-Uphoff}}}
-\bibcite{hms}{{11}{2004}{{McNamara et~al.}}{{McNamara, Stephens, Ruminski, and Kasheta}}}
-\bibcite{hms_web}{{12}{}{{NOAA}}{{}}}
-\bibcite{wildfire_detect}{{13}{2019}{{Phan and Nguyen}}{{}}}
-\bibcite{thresh_geog}{{14}{1998}{{Randriambelo et~al.}}{{Randriambelo, Baldy, Bessafi, Petit, and Despinoy}}}
-\bibcite{satpy}{{15}{2018}{{Raspaud et~al.}}{{Raspaud, Hoese, Dybbroe, Lahtinen, Devasthale, Itkin, Hamann, Rasmussen, Nielsen, Leppelt, et~al.}}}
-\bibcite{transfer2}{{16}{2014}{{Razavian et~al.}}{{Razavian, Azizpour, Sullivan, and Carlsson}}}
+\bibcite{smoke_monitoring}{{1}{2016}{{Allison et~al.}}{{Allison, Johnston, Craig, and Jennings}}}
+\bibcite{smokenet}{{2}{2019}{{Ba et~al.}}{{Ba, Chen, Yuan, Song, and Lo}}}
+\bibcite{true_color}{{3}{2018}{{Bah et~al.}}{{Bah, Gunshor, and Schmit}}}
+\bibcite{therm_enc}{{4}{2018}{{Buckman et~al.}}{{Buckman, Roy, Raffel, and Goodfellow}}}
+\bibcite{imgnet}{{5}{2009}{{Deng et~al.}}{{Deng, Li, Do, Su, and Fei-Fei}}}
+\bibcite{mnist}{{6}{2012}{{Deng}}{{}}}
+\bibcite{conf_thresh}{{7}{2023}{{Ferreira et~al.}}{{Ferreira, Lee, and D{\'o}rea}}}
+\bibcite{goes}{{8}{2019}{{Goodman et~al.}}{{Goodman, Schmit, Daniels, and Redmon}}}
+\bibcite{resnet}{{9}{2015}{{He et~al.}}{{He, Zhang, Ren, and Sun}}}
+\bibcite{semantic}{{10}{2019}{{Iakubovskii}}{{}}}
+\bibcite{cifar}{{11}{2009}{{Krizhevsky et~al.}}{{Krizhevsky, Hinton, et~al.}}}
+\bibcite{larsen}{{12}{2021}{{Larsen et~al.}}{{Larsen, Hanigan, Reich, Qin, Cope, Morgan, and Rappold}}}
+\bibcite{pseudo}{{13}{2013}{{Lee}}{{}}}
+\bibcite{goes_conv}{{14}{2021}{{Lee et~al.}}{{Lee, Kummerow, and Ebert-Uphoff}}}
+\bibcite{hms}{{15}{2004}{{McNamara et~al.}}{{McNamara, Stephens, Ruminski, and Kasheta}}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Acknowledgments and Disclosure of Funding}{10}{section.5}\protected@file@percent }
-\bibcite{unet}{{17}{2015}{{Ronneberger et~al.}}{{Ronneberger, Fischer, and Brox}}}
-\bibcite{zen_angle}{{18}{1985}{{Royer et~al.}}{{Royer, Vincent, and Bonn}}}
-\bibcite{hms_val}{{19}{2008}{{Schroeder et~al.}}{{Schroeder, Ruminski, Csiszar, Giglio, Prins, Schmidt, and Morisette}}}
-\bibcite{data_size}{{20}{2017}{{Sun et~al.}}{{Sun, Shrivastava, Singh, and Gupta}}}
-\bibcite{wang}{{21}{2022}{{Wang et~al.}}{{Wang, Yang, Liang, Zheng, Yin, Tian, and Cui}}}
-\bibcite{smoke_goes}{{22}{2021}{{Wen and Burke}}{{}}}
-\bibcite{transfer}{{23}{2014}{{Yosinski et~al.}}{{Yosinski, Clune, Bengio, and Lipson}}}
-\bibcite{threshold}{{24}{2010}{{Zhao et~al.}}{{Zhao, Ackerman, and Guo}}}
+\bibcite{hms_web}{{16}{}{{NOAA}}{{}}}
+\bibcite{wildfire_detect}{{17}{2019}{{Phan and Nguyen}}{{}}}
+\bibcite{thresh_geog}{{18}{1998}{{Randriambelo et~al.}}{{Randriambelo, Baldy, Bessafi, Petit, and Despinoy}}}
+\bibcite{satpy}{{19}{2018}{{Raspaud et~al.}}{{Raspaud, Hoese, Dybbroe, Lahtinen, Devasthale, Itkin, Hamann, Rasmussen, Nielsen, Leppelt, et~al.}}}
+\bibcite{transfer2}{{20}{2014}{{Razavian et~al.}}{{Razavian, Azizpour, Sullivan, and Carlsson}}}
+\bibcite{unet}{{21}{2015}{{Ronneberger et~al.}}{{Ronneberger, Fischer, and Brox}}}
+\bibcite{zen_angle}{{22}{1985}{{Royer et~al.}}{{Royer, Vincent, and Bonn}}}
+\bibcite{hms_val}{{23}{2008}{{Schroeder et~al.}}{{Schroeder, Ruminski, Csiszar, Giglio, Prins, Schmidt, and Morisette}}}
+\bibcite{data_size}{{24}{2017}{{Sun et~al.}}{{Sun, Shrivastava, Singh, and Gupta}}}
+\bibcite{wang}{{25}{2022}{{Wang et~al.}}{{Wang, Yang, Liang, Zheng, Yin, Tian, and Cui}}}
+\bibcite{smoke_goes}{{26}{2021}{{Wen and Burke}}{{}}}
+\bibcite{transfer}{{27}{2014}{{Yosinski et~al.}}{{Yosinski, Clune, Bengio, and Lipson}}}
+\bibcite{threshold}{{28}{2010}{{Zhao et~al.}}{{Zhao, Ackerman, and Guo}}}
 \gdef \@abspage@last{11}

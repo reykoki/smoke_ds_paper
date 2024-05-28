@@ -1,9 +1,16 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Allison et~al.(2016)Allison, Johnston, Craig, and
+  Jennings]{smoke_monitoring}
+R.~S. Allison, J.~M. Johnston, G.~Craig, and S.~Jennings.
+\newblock Airborne optical and thermal remote sensing for wildfire detection
+  and monitoring.
+\newblock \emph{Sensors}, 16\penalty0 (8):\penalty0 1310, 2016.
 
 \bibitem[Ba et~al.(2019)Ba, Chen, Yuan, Song, and Lo]{smokenet}
 R.~Ba, C.~Chen, J.~Yuan, W.~Song, and S.~Lo.
@@ -27,11 +34,25 @@ J.~Deng, K.~Li, M.~Do, H.~Su, and L.~Fei-Fei.
 \newblock {Construction and Analysis of a Large Scale Image Ontology}.
 \newblock Vision Sciences Society, 2009.
 
+\bibitem[Deng(2012)]{mnist}
+L.~Deng.
+\newblock The mnist database of handwritten digit images for machine learning
+  research [best of the web].
+\newblock \emph{IEEE Signal Processing Magazine}, 29\penalty0 (6):\penalty0
+  141--142, 2012.
+\newblock \doi{10.1109/MSP.2012.2211477}.
+
 \bibitem[Ferreira et~al.(2023)Ferreira, Lee, and D{\'o}rea]{conf_thresh}
 R.~E. Ferreira, Y.~J. Lee, and J.~R. D{\'o}rea.
 \newblock Using pseudo-labeling to improve performance of deep neural networks
   for animal identification.
 \newblock \emph{Scientific Reports}, 13\penalty0 (1):\penalty0 13875, 2023.
+
+\bibitem[Goodman et~al.(2019)Goodman, Schmit, Daniels, and Redmon]{goes}
+S.~J. Goodman, T.~J. Schmit, J.~Daniels, and R.~J. Redmon.
+\newblock \emph{The GOES-R series: a new generation of geostationary
+  environmental satellites}.
+\newblock Elsevier, 2019.
 
 \bibitem[He et~al.(2015)He, Zhang, Ren, and Sun]{resnet}
 K.~He, X.~Zhang, S.~Ren, and J.~Sun.
@@ -41,6 +62,11 @@ K.~He, X.~Zhang, S.~Ren, and J.~Sun.
 P.~Iakubovskii.
 \newblock Segmentation models pytorch.
 \newblock \url{https://github.com/qubvel/segmentation_models.pytorch}, 2019.
+
+\bibitem[Krizhevsky et~al.(2009)Krizhevsky, Hinton, et~al.]{cifar}
+A.~Krizhevsky, G.~Hinton, et~al.
+\newblock Learning multiple layers of features from tiny images.
+\newblock 2009.
 
 \bibitem[Larsen et~al.(2021)Larsen, Hanigan, Reich, Qin, Cope, Morgan, and
   Rappold]{larsen}
