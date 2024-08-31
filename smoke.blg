@@ -4,50 +4,49 @@ The top-level auxiliary file: smoke.aux
 The style file: abbrvnat.bst
 Database file #1: references.bib
 Warning--entry type for "hms_web" isn't style-file defined
---line 262 of file references.bib
-Warning--empty booktitle in imgnet
+--line 263 of file references.bib
 Warning--empty journal in cifar
 Warning--empty year in hms_web
 Warning--empty journal in wildfire_detect
-You've used 28 entries,
+You've used 32 entries,
             2773 wiz_defined-function locations,
-            760 strings with 10109 characters,
-and the built_in function-call counts, 13901 in all, are:
-= -- 1147
-> -- 1046
-< -- 6
-+ -- 352
-- -- 324
-* -- 1236
-:= -- 2195
-add.period$ -- 84
-call.type$ -- 28
-change.case$ -- 189
-chr.to.int$ -- 28
-cite$ -- 60
-duplicate$ -- 547
-empty$ -- 1026
-format.name$ -- 356
-if$ -- 2831
+            801 strings with 11480 characters,
+and the built_in function-call counts, 17236 in all, are:
+= -- 1490
+> -- 1211
+< -- 12
++ -- 407
+- -- 375
+* -- 1518
+:= -- 2667
+add.period$ -- 102
+call.type$ -- 32
+change.case$ -- 218
+chr.to.int$ -- 32
+cite$ -- 67
+duplicate$ -- 703
+empty$ -- 1275
+format.name$ -- 415
+if$ -- 3562
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 22
-newline$ -- 148
-num.names$ -- 112
-pop$ -- 394
+missing$ -- 31
+newline$ -- 172
+num.names$ -- 128
+pop$ -- 428
 preamble$ -- 1
-purify$ -- 162
+purify$ -- 187
 quote$ -- 0
-skip$ -- 452
+skip$ -- 572
 stack$ -- 0
-substring$ -- 358
-swap$ -- 29
-text.length$ -- 0
+substring$ -- 636
+swap$ -- 77
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 303
-warning$ -- 4
-while$ -- 105
+type$ -- 347
+warning$ -- 3
+while$ -- 140
 width$ -- 0
-write$ -- 354
-(There were 5 warnings)
+write$ -- 422
+(There were 4 warnings)

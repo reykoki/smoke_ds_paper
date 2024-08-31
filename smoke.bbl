@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,13 @@ R.~S. Allison, J.~M. Johnston, G.~Craig, and S.~Jennings.
 \newblock Airborne optical and thermal remote sensing for wildfire detection
   and monitoring.
 \newblock \emph{Sensors}, 16\penalty0 (8):\penalty0 1310, 2016.
+
+\bibitem[Andela et~al.(2015)Andela, Kaiser, Van~der Werf, and Wooster]{diurnal}
+N.~Andela, J.~Kaiser, G.~Van~der Werf, and M.~Wooster.
+\newblock New fire diurnal cycle characterizations to improve fire radiative
+  energy assessments made from modis observations.
+\newblock \emph{Atmospheric Chemistry and Physics}, 15\penalty0 (15):\penalty0
+  8831--8846, 2015.
 
 \bibitem[Ba et~al.(2019)Ba, Chen, Yuan, Song, and Lo]{smokenet}
 R.~Ba, C.~Chen, J.~Yuan, W.~Song, and S.~Lo.
@@ -29,18 +36,26 @@ J.~Buckman, A.~Roy, C.~Raffel, and I.~Goodfellow.
 \newblock Thermometer encoding: One hot way to resist adversarial examples.
 \newblock In \emph{International conference on learning representations}, 2018.
 
-\bibitem[Deng et~al.(2009)Deng, Li, Do, Su, and Fei-Fei]{imgnet}
-J.~Deng, K.~Li, M.~Do, H.~Su, and L.~Fei-Fei.
-\newblock {Construction and Analysis of a Large Scale Image Ontology}.
-\newblock Vision Sciences Society, 2009.
+\bibitem[Chen et~al.(2017)Chen, Papandreou, Kokkinos, Murphy, and
+  Yuille]{deeplab}
+L.-C. Chen, G.~Papandreou, I.~Kokkinos, K.~Murphy, and A.~L. Yuille.
+\newblock Deeplab: Semantic image segmentation with deep convolutional nets,
+  atrous convolution, and fully connected crfs.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 40\penalty0 (4):\penalty0 834--848, 2017.
+
+\bibitem[Deng et~al.(2009)Deng, Dong, Socher, Li, Li, and Fei-Fei]{imgnet}
+J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei.
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In \emph{2009 IEEE conference on computer vision and pattern
+  recognition}, pages 248--255. Ieee, 2009.
 
 \bibitem[Deng(2012)]{mnist}
 L.~Deng.
 \newblock The mnist database of handwritten digit images for machine learning
   research [best of the web].
-\newblock \emph{IEEE Signal Processing Magazine}, 29\penalty0 (6):\penalty0
+\newblock \emph{IEEE signal processing magazine}, 29\penalty0 (6):\penalty0
   141--142, 2012.
-\newblock \doi{10.1109/MSP.2012.2211477}.
 
 \bibitem[Ferreira et~al.(2023)Ferreira, Lee, and D{\'o}rea]{conf_thresh}
 R.~E. Ferreira, Y.~J. Lee, and J.~R. D{\'o}rea.
@@ -54,14 +69,23 @@ S.~J. Goodman, T.~J. Schmit, J.~Daniels, and R.~J. Redmon.
   environmental satellites}.
 \newblock Elsevier, 2019.
 
-\bibitem[He et~al.(2015)He, Zhang, Ren, and Sun]{resnet}
-K.~He, X.~Zhang, S.~Ren, and J.~Sun.
-\newblock Deep residual learning for image recognition, 2015.
+\bibitem[Hyer et~al.(2013)Hyer, Reid, Prins, Hoffman, Schmidt, Miettinen, and
+  Giglio]{night}
+E.~J. Hyer, J.~S. Reid, E.~M. Prins, J.~P. Hoffman, C.~C. Schmidt, J.~I.
+  Miettinen, and L.~Giglio.
+\newblock Patterns of fire activity over indonesia and malaysia from polar and
+  geostationary satellite observations.
+\newblock \emph{Atmospheric research}, 122:\penalty0 504--519, 2013.
 
 \bibitem[Iakubovskii(2019)]{semantic}
 P.~Iakubovskii.
 \newblock Segmentation models pytorch.
 \newblock \url{https://github.com/qubvel/segmentation_models.pytorch}, 2019.
+
+\bibitem[Keeley and Syphard(2021)]{fires2020}
+J.~E. Keeley and A.~D. Syphard.
+\newblock Large california wildfires: 2020 fires in historical context.
+\newblock \emph{Fire Ecology}, 17:\penalty0 1--11, 2021.
 
 \bibitem[Krizhevsky et~al.(2009)Krizhevsky, Hinton, et~al.]{cifar}
 A.~Krizhevsky, G.~Hinton, et~al.
@@ -91,6 +115,13 @@ Y.~Lee, C.~D. Kummerow, and I.~Ebert-Uphoff.
   baseline imager (abi) data.
 \newblock \emph{Atmospheric Measurement Techniques}, 14\penalty0 (4):\penalty0
   2699--2716, 2021.
+
+\bibitem[McCarty et~al.(2007)McCarty, Justice, and Korontzi]{ag_fire}
+J.~L. McCarty, C.~O. Justice, and S.~Korontzi.
+\newblock Agricultural burning in the southeastern united states detected by
+  modis.
+\newblock \emph{Remote Sensing of Environment}, 108\penalty0 (2):\penalty0
+  151--162, 2007.
 
 \bibitem[McNamara et~al.(2004)McNamara, Stephens, Ruminski, and Kasheta]{hms}
 D.~McNamara, G.~Stephens, M.~Ruminski, and T.~Kasheta.
@@ -126,17 +157,6 @@ M.~Raspaud, D.~Hoese, A.~Dybbroe, P.~Lahtinen, A.~Devasthale, M.~Itkin,
 \newblock \emph{Bulletin of the American Meteorological Society}, 99\penalty0
   (7):\penalty0 1329--1336, 2018.
 
-\bibitem[Razavian et~al.(2014)Razavian, Azizpour, Sullivan, and
-  Carlsson]{transfer2}
-A.~S. Razavian, H.~Azizpour, J.~Sullivan, and S.~Carlsson.
-\newblock Cnn features off-the-shelf: an astounding baseline for recognition,
-  2014.
-
-\bibitem[Ronneberger et~al.(2015)Ronneberger, Fischer, and Brox]{unet}
-O.~Ronneberger, P.~Fischer, and T.~Brox.
-\newblock U-net: Convolutional networks for biomedical image segmentation,
-  2015.
-
 \bibitem[Royer et~al.(1985)Royer, Vincent, and Bonn]{zen_angle}
 A.~Royer, P.~Vincent, and F.~Bonn.
 \newblock Evaluation and correction of viewing angle effects on satellite
@@ -153,10 +173,24 @@ W.~Schroeder, M.~Ruminski, I.~Csiszar, L.~Giglio, E.~Prins, C.~Schmidt, and
 \newblock \emph{International Journal of Remote Sensing}, 29\penalty0
   (20):\penalty0 6059--6066, 2008.
 
+\bibitem[Sharif~Razavian et~al.(2014)Sharif~Razavian, Azizpour, Sullivan, and
+  Carlsson]{transfer2}
+A.~Sharif~Razavian, H.~Azizpour, J.~Sullivan, and S.~Carlsson.
+\newblock Cnn features off-the-shelf: an astounding baseline for recognition.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and
+  pattern recognition workshops}, pages 806--813, 2014.
+
 \bibitem[Sun et~al.(2017)Sun, Shrivastava, Singh, and Gupta]{data_size}
 C.~Sun, A.~Shrivastava, S.~Singh, and A.~Gupta.
-\newblock Revisiting unreasonable effectiveness of data in deep learning era,
-  2017.
+\newblock Revisiting unreasonable effectiveness of data in deep learning era.
+\newblock In \emph{Proceedings of the IEEE international conference on computer
+  vision}, pages 843--852, 2017.
+
+\bibitem[Tan and Le(2021)]{efficientnetv2}
+M.~Tan and Q.~Le.
+\newblock Efficientnetv2: Smaller models and faster training.
+\newblock In \emph{International conference on machine learning}, pages
+  10096--10106. PMLR, 2021.
 
 \bibitem[Wang et~al.(2022)Wang, Yang, Liang, Zheng, Yin, Tian, and Cui]{wang}
 Z.~Wang, P.~Yang, H.~Liang, C.~Zheng, J.~Yin, Y.~Tian, and W.~Cui.
@@ -173,7 +207,8 @@ J.~Wen and M.~Burke.
 
 \bibitem[Yosinski et~al.(2014)Yosinski, Clune, Bengio, and Lipson]{transfer}
 J.~Yosinski, J.~Clune, Y.~Bengio, and H.~Lipson.
-\newblock How transferable are features in deep neural networks?, 2014.
+\newblock How transferable are features in deep neural networks?
+\newblock \emph{Advances in neural information processing systems}, 27, 2014.
 
 \bibitem[Zhao et~al.(2010)Zhao, Ackerman, and Guo]{threshold}
 T.~X.-P. Zhao, S.~Ackerman, and W.~Guo.

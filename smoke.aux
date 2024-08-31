@@ -46,19 +46,19 @@
 \newlabel{mei}{{3}{6}{If the particle size is \(<\frac {1}{10}\) the wavelength of the interacting light, then the primary scattering will be Rayleigh. Mie scattering is the predominant scattering mechanism when the particle size is larger than the wavelength of light. This schematic demonstrates that when the sun is setting in the West, the Mie scattering will predominately forward scatter towards GOES-East}{figure.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces True color GOES-East (left) and GOES-West (right) imagery from April \(24^{th}\), 2022 in Durango, Mexico. The images were taken \(\sim 0.5\) hours before sunset (01:43 UTC) for this geolocation and time of year.}}{6}{figure.4}\protected@file@percent }
 \newlabel{16_vs_17}{{4}{6}{True color GOES-East (left) and GOES-West (right) imagery from April \(24^{th}\), 2022 in Durango, Mexico. The images were taken \(\sim 0.5\) hours before sunset (01:43 UTC) for this geolocation and time of year}{figure.4}{}}
-\citation{resnet}
-\citation{unet}
+\citation{efficientnetv2}
+\citation{deeplab}
 \citation{transfer}
 \citation{transfer2}
 \citation{imgnet}
 \citation{semantic}
+\citation{conf_thresh}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Three bands of GOES-East data are the raw input to generate a true color image. These plots show variations in the signal-to-noise ratio for smoke detection in relation to the wavelength, \(\lambda \), of light being measured.}}{7}{figure.5}\protected@file@percent }
 \newlabel{bands}{{5}{7}{Three bands of GOES-East data are the raw input to generate a true color image. These plots show variations in the signal-to-noise ratio for smoke detection in relation to the wavelength, \(\lambda \), of light being measured}{figure.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces A smoke annotation projected onto GOES-West imagery from August 2022 that spans from 11:00 UTC to 15:00 UTC, sunrise on August 2nd, 2022 at coordinates (49°24'N, 115°29'W) was 12:15 UTC.}}{7}{figure.6}\protected@file@percent }
 \newlabel{G17_sunrise}{{6}{7}{A smoke annotation projected onto GOES-West imagery from August 2022 that spans from 11:00 UTC to 15:00 UTC, sunrise on August 2nd, 2022 at coordinates (49°24'N, 115°29'W) was 12:15 UTC}{figure.6}{}}
-\citation{conf_thresh}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces IoU results per density of smoke and over all densities using \(f_{\circ }\) and \(f_c\) with \(\mathcal  {D}_M\) and \(\mathcal  {D}_p\).}}{8}{table.4}\protected@file@percent }
-\newlabel{iou_results}{{4}{8}{IoU results per density of smoke and over all densities using \(f_{\circ }\) and \(f_c\) with \(\mathcal {D}_M\) and \(\mathcal {D}_p\)}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces IoU results per density of smoke and over all densities using \(f_{\circ }\) and \(f_c\) with \(\mathcal  {X}_M\) and \(\mathcal  {X}_p\).}}{8}{table.4}\protected@file@percent }
+\newlabel{iou_results}{{4}{8}{IoU results per density of smoke and over all densities using \(f_{\circ }\) and \(f_c\) with \(\mathcal {X}_M\) and \(\mathcal {X}_p\)}{table.4}{}}
 \newlabel{overall_iou}{{1}{8}{Machine Learning Model}{equation.2.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Limitations}{8}{section.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces GOES-West imagery showing smoke on June 8th, 2022 in Alaska where, at this geolocation, daylight was between 12:43-7:53 UTC. The HMS smoke annotations displayed span from 18:50 to 23:50 UTC. a) shows the imagery that was selected using the Mie-derived data selection process b) shows the image that had the highest IoU score between the \(f_{\circ }\) generated pseudo-label and the analyst annotation.}}{9}{figure.7}\protected@file@percent }
@@ -66,32 +66,67 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{9}{section.4}\protected@file@percent }
 \bibdata{references}
 \bibcite{smoke_monitoring}{{1}{2016}{{Allison et~al.}}{{Allison, Johnston, Craig, and Jennings}}}
-\bibcite{smokenet}{{2}{2019}{{Ba et~al.}}{{Ba, Chen, Yuan, Song, and Lo}}}
-\bibcite{true_color}{{3}{2018}{{Bah et~al.}}{{Bah, Gunshor, and Schmit}}}
-\bibcite{therm_enc}{{4}{2018}{{Buckman et~al.}}{{Buckman, Roy, Raffel, and Goodfellow}}}
-\bibcite{imgnet}{{5}{2009}{{Deng et~al.}}{{Deng, Li, Do, Su, and Fei-Fei}}}
-\bibcite{mnist}{{6}{2012}{{Deng}}{{}}}
-\bibcite{conf_thresh}{{7}{2023}{{Ferreira et~al.}}{{Ferreira, Lee, and D{\'o}rea}}}
-\bibcite{goes}{{8}{2019}{{Goodman et~al.}}{{Goodman, Schmit, Daniels, and Redmon}}}
-\bibcite{resnet}{{9}{2015}{{He et~al.}}{{He, Zhang, Ren, and Sun}}}
-\bibcite{semantic}{{10}{2019}{{Iakubovskii}}{{}}}
-\bibcite{cifar}{{11}{2009}{{Krizhevsky et~al.}}{{Krizhevsky, Hinton, et~al.}}}
-\bibcite{larsen}{{12}{2021}{{Larsen et~al.}}{{Larsen, Hanigan, Reich, Qin, Cope, Morgan, and Rappold}}}
-\bibcite{pseudo}{{13}{2013}{{Lee}}{{}}}
-\bibcite{goes_conv}{{14}{2021}{{Lee et~al.}}{{Lee, Kummerow, and Ebert-Uphoff}}}
-\bibcite{hms}{{15}{2004}{{McNamara et~al.}}{{McNamara, Stephens, Ruminski, and Kasheta}}}
-\bibcite{hms_web}{{16}{}{{NOAA}}{{}}}
-\bibcite{wildfire_detect}{{17}{2019}{{Phan and Nguyen}}{{}}}
+\bibcite{diurnal}{{2}{2015}{{Andela et~al.}}{{Andela, Kaiser, Van~der Werf, and Wooster}}}
+\bibcite{smokenet}{{3}{2019}{{Ba et~al.}}{{Ba, Chen, Yuan, Song, and Lo}}}
+\bibcite{true_color}{{4}{2018}{{Bah et~al.}}{{Bah, Gunshor, and Schmit}}}
+\bibcite{therm_enc}{{5}{2018}{{Buckman et~al.}}{{Buckman, Roy, Raffel, and Goodfellow}}}
+\bibcite{deeplab}{{6}{2017}{{Chen et~al.}}{{Chen, Papandreou, Kokkinos, Murphy, and Yuille}}}
+\bibcite{imgnet}{{7}{2009}{{Deng et~al.}}{{Deng, Dong, Socher, Li, Li, and Fei-Fei}}}
+\bibcite{mnist}{{8}{2012}{{Deng}}{{}}}
+\bibcite{conf_thresh}{{9}{2023}{{Ferreira et~al.}}{{Ferreira, Lee, and D{\'o}rea}}}
+\bibcite{goes}{{10}{2019}{{Goodman et~al.}}{{Goodman, Schmit, Daniels, and Redmon}}}
+\bibcite{night}{{11}{2013}{{Hyer et~al.}}{{Hyer, Reid, Prins, Hoffman, Schmidt, Miettinen, and Giglio}}}
+\bibcite{semantic}{{12}{2019}{{Iakubovskii}}{{}}}
+\bibcite{fires2020}{{13}{2021}{{Keeley and Syphard}}{{}}}
+\bibcite{cifar}{{14}{2009}{{Krizhevsky et~al.}}{{Krizhevsky, Hinton, et~al.}}}
+\bibcite{larsen}{{15}{2021}{{Larsen et~al.}}{{Larsen, Hanigan, Reich, Qin, Cope, Morgan, and Rappold}}}
+\bibcite{pseudo}{{16}{2013}{{Lee}}{{}}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Acknowledgments and Disclosure of Funding}{10}{section.5}\protected@file@percent }
-\bibcite{thresh_geog}{{18}{1998}{{Randriambelo et~al.}}{{Randriambelo, Baldy, Bessafi, Petit, and Despinoy}}}
-\bibcite{satpy}{{19}{2018}{{Raspaud et~al.}}{{Raspaud, Hoese, Dybbroe, Lahtinen, Devasthale, Itkin, Hamann, Rasmussen, Nielsen, Leppelt, et~al.}}}
-\bibcite{transfer2}{{20}{2014}{{Razavian et~al.}}{{Razavian, Azizpour, Sullivan, and Carlsson}}}
-\bibcite{unet}{{21}{2015}{{Ronneberger et~al.}}{{Ronneberger, Fischer, and Brox}}}
-\bibcite{zen_angle}{{22}{1985}{{Royer et~al.}}{{Royer, Vincent, and Bonn}}}
-\bibcite{hms_val}{{23}{2008}{{Schroeder et~al.}}{{Schroeder, Ruminski, Csiszar, Giglio, Prins, Schmidt, and Morisette}}}
-\bibcite{data_size}{{24}{2017}{{Sun et~al.}}{{Sun, Shrivastava, Singh, and Gupta}}}
-\bibcite{wang}{{25}{2022}{{Wang et~al.}}{{Wang, Yang, Liang, Zheng, Yin, Tian, and Cui}}}
-\bibcite{smoke_goes}{{26}{2021}{{Wen and Burke}}{{}}}
-\bibcite{transfer}{{27}{2014}{{Yosinski et~al.}}{{Yosinski, Clune, Bengio, and Lipson}}}
-\bibcite{threshold}{{28}{2010}{{Zhao et~al.}}{{Zhao, Ackerman, and Guo}}}
-\gdef \@abspage@last{11}
+\bibcite{goes_conv}{{17}{2021}{{Lee et~al.}}{{Lee, Kummerow, and Ebert-Uphoff}}}
+\bibcite{ag_fire}{{18}{2007}{{McCarty et~al.}}{{McCarty, Justice, and Korontzi}}}
+\bibcite{hms}{{19}{2004}{{McNamara et~al.}}{{McNamara, Stephens, Ruminski, and Kasheta}}}
+\bibcite{hms_web}{{20}{}{{NOAA}}{{}}}
+\bibcite{wildfire_detect}{{21}{2019}{{Phan and Nguyen}}{{}}}
+\bibcite{thresh_geog}{{22}{1998}{{Randriambelo et~al.}}{{Randriambelo, Baldy, Bessafi, Petit, and Despinoy}}}
+\bibcite{satpy}{{23}{2018}{{Raspaud et~al.}}{{Raspaud, Hoese, Dybbroe, Lahtinen, Devasthale, Itkin, Hamann, Rasmussen, Nielsen, Leppelt, et~al.}}}
+\bibcite{zen_angle}{{24}{1985}{{Royer et~al.}}{{Royer, Vincent, and Bonn}}}
+\bibcite{hms_val}{{25}{2008}{{Schroeder et~al.}}{{Schroeder, Ruminski, Csiszar, Giglio, Prins, Schmidt, and Morisette}}}
+\bibcite{transfer2}{{26}{2014}{{Sharif~Razavian et~al.}}{{Sharif~Razavian, Azizpour, Sullivan, and Carlsson}}}
+\bibcite{data_size}{{27}{2017}{{Sun et~al.}}{{Sun, Shrivastava, Singh, and Gupta}}}
+\bibcite{efficientnetv2}{{28}{2021}{{Tan and Le}}{{}}}
+\bibcite{wang}{{29}{2022}{{Wang et~al.}}{{Wang, Yang, Liang, Zheng, Yin, Tian, and Cui}}}
+\bibcite{smoke_goes}{{30}{2021}{{Wen and Burke}}{{}}}
+\bibcite{transfer}{{31}{2014}{{Yosinski et~al.}}{{Yosinski, Clune, Bengio, and Lipson}}}
+\bibcite{threshold}{{32}{2010}{{Zhao et~al.}}{{Zhao, Ackerman, and Guo}}}
+\citation{fires2020}
+\citation{ag_fire}
+\citation{diurnal}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Sample count per year}}{12}{figure.8}\protected@file@percent }
+\newlabel{sample_count_per_yr}{{8}{12}{Sample count per year}{figure.8}{}}
+\newlabel{count_per_yr}{{8}{12}{Sample count per year}{figure.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix}{12}{appendix.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Original Data and Software Licenses}{12}{subsection.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Statistical Visualizations for SmokeViz Dataset}{12}{subsection.A.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Model Performance Analysis}{12}{subsection.A.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Sample count per month.}}{13}{figure.9}\protected@file@percent }
+\newlabel{sample_count_per_month}{{9}{13}{Sample count per month}{figure.9}{}}
+\newlabel{count_per_month}{{9}{13}{Sample count per month}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Sample count per US state.}}{13}{figure.10}\protected@file@percent }
+\newlabel{count_per_state}{{10}{13}{Sample count per US state}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Sample count per North American country.}}{13}{figure.11}\protected@file@percent }
+\newlabel{count_per_country}{{11}{13}{Sample count per North American country}{figure.11}{}}
+\citation{night}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces IoU between \(f_{c}\) predictions and analyst annotations per month for \(\mathcal  {X}_p\) test set.}}{14}{figure.12}\protected@file@percent }
+\newlabel{iou_per_month}{{12}{14}{IoU between \(f_{c}\) predictions and analyst annotations per month for \(\mathcal {X}_p\) test set}{figure.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Sample count along with variations in \(f_c\) performance depending on which GOES satellite data is used.}}{14}{table.5}\protected@file@percent }
+\newlabel{sample_count_sat}{{5}{14}{Sample count along with variations in \(f_c\) performance depending on which GOES satellite data is used}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Variations in \(f_c\) performance depending on temporal proximity to sunrise or sunset.}}{15}{table.6}\protected@file@percent }
+\newlabel{two_hr_iou}{{6}{15}{Variations in \(f_c\) performance depending on temporal proximity to sunrise or sunset}{table.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Along with sample count we show variations in \(f_{c}\) performance depending on quadrant.}}{15}{table.7}\protected@file@percent }
+\newlabel{quad}{{7}{15}{Along with sample count we show variations in \(f_{c}\) performance depending on quadrant}{table.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.4}Machine Learning Reproducibility}{15}{subsection.A.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Comparison of the IoU and loss between the full \(\mathcal  {X}_p\) test set and the \(\mathcal  {X}_p\) test set with adjacent days between the validation and test set removed.}}{15}{table.8}\protected@file@percent }
+\newlabel{adjacent}{{8}{15}{Comparison of the IoU and loss between the full \(\mathcal {X}_p\) test set and the \(\mathcal {X}_p\) test set with adjacent days between the validation and test set removed}{table.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Hyperparameters used to create \(f_{\circ }\) and \(f_{c}\).}}{16}{table.9}\protected@file@percent }
+\newlabel{hyper}{{9}{16}{Hyperparameters used to create \(f_{\circ }\) and \(f_{c}\)}{table.9}{}}
+\gdef \@abspage@last{22}
