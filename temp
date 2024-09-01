@@ -293,7 +293,7 @@ In this study, we have refined an existing dataset originally curated by NOAA's 
 
 To improve the dataset's capacity to accurately represent wildfire smoke plumes, we train a parent machine learning model, \(f_{\circ}\), using the Mie-derived dataset, \(\mathcal{X}_M\), and run it on the relevant satellite images within the time-frame. The image with the maximum IoU score between the model's smoke predictions, or pseudo-label, and the analyst smoke annotations are used to create the pseudo-label generated dataset, \(\mathcal{X}_{p}\). We then train a child model, \(f_c\), using \(\mathcal{X}_{p}\) and test \(f_{\circ}\) and \(f_c\) on both the 2022 testing sets from \(\mathcal{X}_{M}\) and \(\mathcal{X}_{p}\). The results reported in table \ref{iou_results} suggest that \(\mathcal{X}_{p}\) was able to train a better performing model, \(f_c\), that gave higher IoU metrics on both dataset's testing sets in comparison to the original parent model, \(f_{\circ}\).
 
-The result of this study is a representative dataset, SmokeViz\footnote{\url{https://noaa-gsl-experimental-pds.s3.amazonaws.com/index.html\#SmokeViz/}},that can be used to train machine learning models for various wildfire smoke applications. A future goal is to produce a robust and reliable machine learning based approach for detecting wildfires using satellite imagery. That information can be used for wildfire monitoring and as data provided to public health officials for air quality assessments. On a broader scale, we show how pseudo-labeling can be used to optimize a dataset when the resolution for the data and corresponding labels do not match. This could be useful in similar applications involving time-series/video data with a singular label where the data can be compressed while still remaining representative of the label. 
+The result of this study is a representative dataset that can be used to train machine learning models for various wildfire smoke applications. A future goal is to produce a robust and reliable machine learning based approach for detecting wildfires using satellite imagery. That information can be used for wildfire monitoring and as data provided to public health officials for air quality assessments. On a broader scale, we show how pseudo-labeling can be used to optimize a dataset when the resolution for the data and corresponding labels do not match. This could be useful in similar applications involving time-series/video data with a singular label where the data can be compressed while still remaining representative of the label. 
 
 \section{Acknowledgments and Disclosure of Funding}
 
@@ -425,7 +425,7 @@ A weakness in the dataset split for 2022 validation and testing sets is that the
 
 \subsection{Machine Learning Reproducibility}
 
-All relevant code is accessible at \url{https://github.com/reykoki/SmokeViz}. The models presented in this paper are not optimized for performance, but are intended to create sufficient pseudo-labels to develop the SmokeViz dataset and then compare the performance of SmokeViz against the original dataset. We did not perform any experimentation for deciding on architecture or hyperparameters shown in table \ref{hyper}, but did make educated decisions. We chose DeepLabV3+ because smoke varies in scale and the DeepLabV3+ backbone uses a atrous spatial pyramid pooling module that allows for varying scales of the same type of object. We use the Adam optimizer that will adapt the learning rate during training and is suited for problems with large amounts of data. Batch size was chosen due to the necessity to run the model on limited resources. 
+The models presented in this paper are not optimized for performance, but are intended to create sufficient pseudo-labels to develop the SmokeViz dataset and then compare the performance of SmokeViz against the original dataset. We did not perform any experimentation for deciding on architecture or hyperparameters but did make educated decisions. We chose DeepLabV3+ because smoke varies in scale and the DeepLabV3+ backbone uses a atrous spatial pyramid pooling module that allows for varying scales of the same type of object. We use the Adam optimizer that will adapt the learning rate during training and is suited for problems with large amounts of data. Batch size was chosen due to the necessity to run the model on limited resources. 
 
 \begin{table}
     \caption{Hyperparameters used to create \(f_{\circ}\) and \(f_{c}\).}
@@ -445,231 +445,256 @@ All relevant code is accessible at \url{https://github.com/reykoki/SmokeViz}. Th
 
 
 
-\subsection{Datasheet for SmokeViz}
+\newpage
 
-Questions from the https://arxiv.org/abs/1803.09010 paper, v7.
+# Datasheet for dataset "add dataset name here"
 
-\subsubsection{Motivation}
+Questions from the [Datasheets for Datasets](https://arxiv.org/abs/1803.09010) paper, v7.
 
-The questions in this section are primarily intended to encourage dataset creators to clearly articulate their reasons for creating the dataset and to promote transparencyabout funding interests.
+Jump to section:
+
+- [Motivation](#motivation)
+- [Composition](#composition)
+- [Collection process](#collection-process)
+- [Preprocessing/cleaning/labeling](#preprocessingcleaninglabeling)
+- [Uses](#uses)
+- [Distribution](#distribution)
+- [Maintenance](#maintenance)
+
+## Motivation
+
+_The questions in this section are primarily intended to encourage dataset creators to clearly articulate their reasons for creating the dataset and to promote transparencyabout funding interests._
 
 \textbf{For what purpose was the dataset created? }
 
-SmokeViz was created to serve as a large labeled dataset to be used in creating wildfire smoke plume related machine learning models. Applications include wildfire smoke detection or smoke dispersion modeling.
+ SmokeViz was created to serve as a large labeled dataset to be used in creating wildfire smoke plume related machine learning models. Applications include wildfire smoke detection or smoke dispersion modeling.
 
 \textbf{Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)?}
+- SmokeViz was created a group of researchers that at the time of the dataset creation were affiliated with The National Oceanic and Atmospheric Administration and The University of Colorado, Boulder, and The Cooperative Institute for Research in Environmental Sciences that connects CU, Boulder to NOAA. 
 
-SmokeViz was created a group of researchers that at the time of the dataset creation were affiliated with The National Oceanic and Atmospheric Administration and The University of Colorado, Boulder, and The Cooperative Institute for Research in Environmental Sciences that connects CU, Boulder to NOAA. 
 
-
-\textbf{Who funded the creation of the dataset?} 
+\textbf{Who funded the creation of the dataset? 
 
 This work was funded by the National Oceanic and Atmospheric Administration and The Cooperative Institute for Research in Environmental Sciences.
 
 \textbf{Any other comments?}
-
 None.
 
-\subsubsection{Composition}
+## Composition
 
-Most of these questions are intended to provide dataset consumers with the information they need to make informed decisions about using the dataset for specific tasks. The answers to some of these questions reveal information about compliance with the EU’s General Data Protection Regulation (GDPR) or comparable regulations in other jurisdictions.
+_Most of these questions are intended to provide dataset consumers with the
+information they need to make informed decisions about using the dataset for
+specific tasks. The answers to some of these questions reveal information
+about compliance with the EU’s General Data Protection Regulation (GDPR) or
+comparable regulations in other jurisdictions._
 
 \textbf{What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)?}
 
-Each instance is a 256x256x3 RGB image from GOES imagery with an accompanying 256x256x3 binary masks corresponding to density of smoke. There are 3 densities of smoke - Light, Medium and Heavy.
+- Each instance is a 256x256x3 RGB image from GOES imagery with an accompanying 256x256x3 binary masks corresponding to density of smoke. There are 3 densities of smoke - Light, Medium and Heavy.
+- 
+- We provide 130,000 satellite image - smoke annotation pairs. Each pair consists of a 256x256x3 RGB image from either GOES-EAST or GOES-WEST (specified in the filename) with an accompanying 256x256x3 smoke annotation that has binary masks for each layer associated with a smoke density. 
 
-
-\textbf{How many instances are there in total (of each type, if appropriate)?} 
-
+\textbf{How many instances are there in total (of each type, if appropriate)?
 There are 134500 samples,  90810 for light, 28023 for medium and 15667 for Heavy density smoke.
 
 
-\textbf{Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set? }
+\textbf{Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set?
 
 It is intended to contain all smoke data from 2018 through 2023 but we cut out imagery if it is too bright or too dim based on photon count.
 
-\textbf{What data does each instance consist of? }
+\textbf{What data does each instance consist of? 
 
 The data is processed to correct for Rayleigh scattering, solar zenith angle and projected so each pixel is representative of the same area of land. The algorithm is referenced in the SmokeViz paper.
 
-\textbf{Is there a label or target associated with each instance?}
+\textbf{Is there a label or target associated with each instance?
 
 Yes, there are no instances that do not contain smoke.
 
-\textbf{Is any information missing from individual instances?}
+\textbf{Is any information missing from individual instances?
 
 We have seen imagery where smoke is labeled but there's adjacent smoke plumes that were unlabeled. With human labels comes human errors.
 
-\textbf{Are relationships between individual instances made explicit (e.g., users’ movie ratings, social network links)?}
+\textbf{Are relationships between individual instances made explicit (e.g., users’ movie ratings, social network links)?
 
 Some instances can overap in geographic location, there can be multiple smoke plumes in one instance, but the index of the HMS smoke annotation is listed and can be mapped back to the original dataset for geolocational information.
 
-\textbf{Are there recommended data splits (e.g., training, development/validation, testing)?}
+\textbf{Are there recommended data splits (e.g., training, development/validation, testing)?
 
 We recommend using full years of data for training, validation and testing, but split testing and validation every 10 days for 2022 in order to keep more data in the training set.
 
-\textbf{Are there any errors, sources of noise, or redundancies in the dataset?}
+\textbf{Are there any errors, sources of noise, or redundancies in the dataset?
 
 The HMS smoke annotations that are used as truth are a source of noise as explained in the SmokeViz paper. These include approximations of smoke polygons mismatching actual location and time windows being too large that smoke moves during the time window. There is also noise caused by atmospheric interactions with light. Redundancies occur when there more than one smoke plume and annotation in one image.
 
-\textbf{Is the dataset self-contained, or does it link to or otherwise rely on external resources (e.g., websites, tweets, other datasets)?}
+\textbf{Is the dataset self-contained, or does it link to or otherwise rely on external resources (e.g., websites, tweets, other datasets)?
 
 The dataset is self-contained.
 
-\textbf{Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by doctor-patient confidentiality, data that includes the content of individuals’ non-public communications)?}
+\textbf{Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by doctor-patient confidentiality, data that includes the content of individuals’ non-public communications)?
 
 No.
 
-\textbf{Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise cause anxiety?}
+\textbf{Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise cause anxiety?
 
 No.
 
-\textbf{Does the dataset relate to people? }
+\textbf{Does the dataset relate to people? 
 
 No, not directly, wildfires do affect people, but these images are at 1km resolution.
 
-\textbf{Does the dataset identify any subpopulations (e.g., by age, gender)?}
+\textbf{Does the dataset identify any subpopulations (e.g., by age, gender)?
 
 No.
 
-\textbf{Is it possible to identify individuals (i.e., one or more natural persons), either directly or indirectly (i.e., in combination with other data) from the dataset?}
+\textbf{Is it possible to identify individuals (i.e., one or more natural persons), either directly or indirectly (i.e., in combination with other data) from the dataset?
 
 No.
 
-\textbf{Does the dataset contain data that might be considered sensitive in any way (e.g., data that reveals racial or ethnic origins, sexual orientations, religious beliefs, political opinions or union memberships, or locations; financial or health data; biometric or genetic data; forms of government identification, such as social security numbers; criminal history)?}
+\textbf{Does the dataset contain data that might be considered sensitive in any way (e.g., data that reveals racial or ethnic origins, sexual orientations, religious beliefs, political opinions or union memberships, or locations; financial or health data; biometric or genetic data; forms of government identification, such as social security numbers; criminal history)?
 
 No.
 
-\textbf{Any other comments?}
+\textbf{Any other comments?
 
 No.
 
+## Collection process
 
-\subsubsection{Collection process}
+_\[T\]he answers to questions here may provide information that allow others to
+reconstruct the dataset without access to it._
 
-The answers to questions here may provide information that allow others to reconstruct the dataset without access to it.
-
-\textbf{How was the data associated with each instance acquired?}
+\textbf{How was the data associated with each instance acquired?
 
 The labeled from HMS smoke product is not validated or verified but is used as verification for numerical smoke dispersion modeling. The GOES imagery is collected by the ABI sensor and is corrected for any anomalies and also converted from photon count to radiance values.
 
-\textbf{What mechanisms or procedures were used to collect the data (e.g., hardware apparatus or sensor, manual human curation, software program, software API)?}
+\textbf{What mechanisms or procedures were used to collect the data (e.g., hardware apparatus or sensor, manual human curation, software program, software API)?
 
 Original low temporal resolution annotations were manual human analyst curated. To create the high temporal resolution annotations, we use pseudo-labeling discussed in the SmokeViz paper.
 
-\textbf{If the dataset is a sample from a larger set, what was the sampling strategy (e.g., deterministic, probabilistic with specific sampling probabilities)?}
+\textbf{If the dataset is a sample from a larger set, what was the sampling strategy (e.g., deterministic, probabilistic with specific sampling probabilities)?
 
 The HMS smoke analysts are only looking for smoke during the daytime.
 
-\textbf{Who was involved in the data collection process (e.g., students, crowdworkers, contractors) and how were they compensated (e.g., how much were crowdworkers paid)?}
+\textbf{Who was involved in the data collection process (e.g., students, crowdworkers, contractors) and how were they compensated (e.g., how much were crowdworkers paid)?
 
 The NOAA employed analysts are compensated as salaried federal employees.
 
-\textbf{Over what timeframe was the data collected?}
+\textbf{Over what timeframe was the data collected?
 
 2018-2023
 
-\textbf{Were any ethical review processes conducted (e.g., by an institutional review board)?}
+\textbf{Were any ethical review processes conducted (e.g., by an institutional review board)?
 
 No.
 
 
-\subsubsection{Preprocessing/cleaning/labeling}
+## Preprocessing/cleaning/labeling
 
+_The questions in this section are intended to provide dataset consumers with the information
+they need to determine whether the “raw” data has been processed in ways that are compatible
+with their chosen tasks. For example, text that has been converted into a “bag-of-words” is
+not suitable for tasks involving word order._
 
-The questions in this section are intended to provide dataset consumers with the information they need to determine whether the “raw” data has been processed in ways that are compatible with their chosen tasks. For example, text that has been converted into a “bag-of-words” is not suitable for tasks involving word order.
-
-\textbf{Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?}
+\textbf{Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?
 
 The data was processed according to the GOES True Color paper referenced in the SmokeViz methods section.
 
-\textbf{Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?}
+\textbf{Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?
 
 The raw data is available from the NOAA AWS webpage.
 https://registry.opendata.aws/noaa-goes/
 The HMS smoke annotations are available here:
-https://www.ospo.noaa.gov/products/land/hms.html
+https://www.ospo.noaa.gov/products/land/hms.html#data
 
-\textbf{Is the software used to preprocess/clean/label the instances available?}
-
+\textbf{Is the software used to preprocess/clean/label the instances available?
 
 Yes, Pytroll implements the algorithm discussed inteh GOES True Color paper referenced in the SmokeViz paper.
 
-\textbf{Any other comments?}
+\textbf{Any other comments?
 None.
 
-\subsubsection{Uses}
+## Uses
 
-These questions are intended to encourage dataset creators to reflect on the tasks for which the dataset should and should not be used. By explicitly highlighting these tasks, dataset creators can help dataset consumers to make informed decisions, thereby avoiding potential risks or harms.
+_These questions are intended to encourage dataset creators to reflect on the tasks
+for which the dataset should and should not be used. By explicitly highlighting these tasks,
+dataset creators can help dataset consumers to make informed decisions, thereby avoiding
+potential risks or harms._
 
-\textbf{Has the dataset been used for any tasks already?}
+\textbf{Has the dataset been used for any tasks already?
 
 Not yet.
 
-\textbf{Is there a repository that links to any or all papers or systems that use the dataset?}
+\textbf{Is there a repository that links to any or all papers or systems that use the dataset?
 
 No.
 
-\textbf{What (other) tasks could the dataset be used for?}
+\textbf{What (other) tasks could the dataset be used for?
 Smoke dispersion modeling, automated wildfire smoke detection. 
 
-\textbf{Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses?}
+\textbf{Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses?
+
+_For example, is there anything that a future user might need to know to avoid uses that
+could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of
+service issues) or other undesirable harms (e.g., financial harms, legal risks) If so, please
+provide a description. Is there anything a future user could do to mitigate these undesirable
+harms?_
+
+\textbf{Are there tasks for which the dataset should not be used?
+
+_If so, please provide a description._
+
+\textbf{Any other comments?
+
+## Distribution
+
+\textbf{Will the dataset be distributed to third parties outside of the entity (e.g., company, institution, organization) on behalf of which the dataset was created? 
 
 No.
 
-\textbf{Are there tasks for which the dataset should not be used?}
-
-No.
-\textbf{Any other comments?}
-None
-
-\subsubsection{Distribution}
-
-\textbf{Will the dataset be distributed to third parties outside of the entity (e.g., company, institution, organization) on behalf of which the dataset was created? }
-
-No.
-
-\textbf{How will the dataset will be distributed (e.g., tarball on website, API, GitHub)?}
+\textbf{How will the dataset will be distributed (e.g., tarball on website, API, GitHub)?
 
 Amazon Web Services hosted by NOAA.
 
-\textbf{When will the dataset be distributed?}
+\textbf{When will the dataset be distributed?
 
 It is currently available.
 
-\textbf{Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?}
+\textbf{Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?
+
+_If so, please describe this license and/or ToU, and provide a link or other access point to,
+or otherwise reproduce, any relevant licensing terms or ToU, as well as any fees associated
+with these restrictions._
+
+\textbf{Have any third parties imposed IP-based or other restrictions on the data associated with the instances?
 
 No.
-\textbf{Have any third parties imposed IP-based or other restrictions on the data associated with the instances?}
+
+\textbf{Do any export controls or other regulatory restrictions apply to the dataset or to individual instances?
 
 No.
 
-\textbf{Do any export controls or other regulatory restrictions apply to the dataset or to individual instances?}
-
-No.
-
-\textbf{Any other comments?}
+\textbf{Any other comments?
 
 None.
 
-\subsubsubsection{Maintenance}
+## Maintenance
 
-These questions are intended to encourage dataset creators to plan for dataset maintenance
-and communicate this plan with dataset consumers.
+_These questions are intended to encourage dataset creators to plan for dataset maintenance
+and communicate this plan with dataset consumers._
 
-\textbf{Who is supporting/hosting/maintaining the dataset?}
+\textbf{Who is supporting/hosting/maintaining the dataset?
 
 NOAA.
 
-\textbf{How can the owner/curator/manager of the dataset be contacted (e.g., email address)?}
+\textbf{How can the owner/curator/manager of the dataset be contacted (e.g., email address)?
 
 rey.koki@noaa.gov
 
-\textbf{Is there an erratum?}
+\textbf{Is there an erratum?
 
 No.
 
-\textbf{Will the dataset be updated (e.g., to correct labeling errors, add new instances, delete instances)?}
+\textbf{Will the dataset be updated (e.g., to correct labeling errors, add new instances, delete instances)?
 
 yes
 
@@ -685,8 +710,7 @@ No, if it needs to be updated, it is too large to keep multple versions.
 
 We encourage anyone that would like to contribute to SmokeViz to reach out to Rey Koki at rey.koki@noaa.gov
 
-\textbf{Any other comments?}
-
+\textbf{Any other comments?
 None
 
 
