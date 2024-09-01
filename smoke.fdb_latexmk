@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex smoke"] 1725142879.16231 "smoke.aux" "smoke.bbl" "smoke" 1725142885.85334 0
+["bibtex smoke"] 1725149743.66182 "smoke.aux" "smoke.bbl" "smoke" 1725149813.4741 0
   "./references.bib" 1725139630.1502 13706 cfb96bdd3495201fc7a3887f02fdb504 ""
   "/usr/share/texmf-dist/bibtex/bst/natbib/abbrvnat.bst" 1716849630 26532 66bed5cc59495faaa3f9ae9af9fa5e42 ""
-  "smoke.aux" 1725142885.60364 14468 97f3c735968d9d570274a5f6d2ec7e35 "pdflatex"
+  "smoke.aux" 1725149813.14385 15392 8ecb9aea11d298397d45c8012d2ead38 "pdflatex"
   (generated)
   "smoke.bbl"
   "smoke.blg"
   (rewritten before read)
-["pdflatex"] 1725142879.24667 "smoke.tex" "smoke.pdf" "smoke" 1725142885.85354 0
+["pdflatex"] 1725149806.99711 "smoke.tex" "smoke.pdf" "smoke" 1725149813.47435 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1716849630 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1716849630 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -129,10 +129,10 @@
   "figures/timelapse.png" 1708987046.8769 8922327 3e321317d42dd391175e691e7dbf9fb1 ""
   "figures/timelapse_G17_2.png" 1708987046.81356 1267174 ba2bcec789e07bc4692a37bad512b7cb ""
   "neurips_2024.sty" 1712262387.41182 11625 b5f853b54a7a098e9e5b837f826d5daa ""
-  "smoke.aux" 1725142885.60364 14468 97f3c735968d9d570274a5f6d2ec7e35 "pdflatex"
-  "smoke.bbl" 1725142879.23697 10178 f6b6db4a0b006b258248904d9df141c9 "bibtex smoke"
-  "smoke.out" 1725142885.60364 1685 1c066e0f3c4848be21072bd0829a8ee2 "pdflatex"
-  "smoke.tex" 1725142868.1203 71797 328d5b4cccb8a60d4d109b946f0957d8 ""
+  "smoke.aux" 1725149813.14385 15392 8ecb9aea11d298397d45c8012d2ead38 "pdflatex"
+  "smoke.bbl" 1725149743.73385 10178 f6b6db4a0b006b258248904d9df141c9 "bibtex smoke"
+  "smoke.out" 1725149813.14385 2701 3bacf0fa1c55bb60a04adba78df81302 "pdflatex"
+  "smoke.tex" 1725149804.94718 83015 c0bbd56607ce51c998d5cb34bda43a22 ""
   "stat_figs/IoU_per_month.png" 1725128923.81988 67215 d886986d28da1705d3ea26aed818d164 ""
   "stat_figs/sample_count_per_country.png" 1725128923.82321 225198 8503c8378c8b737f64f0202405b57bc4 ""
   "stat_figs/sample_count_per_month.png" 1725128923.82321 72221 7e794d64158e6431ee02a32e1ffda9cd ""

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.3)  31 AUG 2024 16:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.3)  31 AUG 2024 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -597,7 +597,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super
 -t1.enc}] [2]
-<figures/Misclassified.png, id=95, 1734.48pt x 578.16pt>
+<figures/Misclassified.png, id=123, 1734.48pt x 578.16pt>
 File: figures/Misclassified.png Graphic file (type png)
 <use figures/Misclassified.png>
 Package pdftex.def Info: figures/Misclassified.png  used on input line 139.
@@ -611,24 +611,24 @@ Overfull \hbox (0.85359pt too wide) in paragraph at lines 139--140
 Underfull \vbox (badness 5302) has occurred while \output is active []
 
  [3 <./figures/Misclassified.png>]
-<figures/timelapse.png, id=118, 1445.4pt x 505.89pt>
+<figures/timelapse.png, id=146, 1445.4pt x 505.89pt>
 File: figures/timelapse.png Graphic file (type png)
 <use figures/timelapse.png>
 Package pdftex.def Info: figures/timelapse.png  used on input line 171.
 (pdftex.def)             Requested size: 369.88582pt x 129.45953pt.
  [4]
-<figures/mei.png, id=136, 496.7358pt x 152.9715pt>
+<figures/mei.png, id=164, 496.7358pt x 152.9715pt>
 File: figures/mei.png Graphic file (type png)
 <use figures/mei.png>
 Package pdftex.def Info: figures/mei.png  used on input line 207.
 (pdftex.def)             Requested size: 284.52756pt x 87.6218pt.
  [5 <./figures/timelapse.png>]
-<figures/G16_v_G17.png, id=153, 1156.32pt x 578.16pt>
+<figures/G16_v_G17.png, id=182, 1156.32pt x 578.16pt>
 File: figures/G16_v_G17.png Graphic file (type png)
 <use figures/G16_v_G17.png>
 Package pdftex.def Info: figures/G16_v_G17.png  used on input line 215.
 (pdftex.def)             Requested size: 312.9803pt x 156.48462pt.
-<figures/GOES16_bands.png, id=156, 1387.584pt x 715.473pt>
+<figures/GOES16_bands.png, id=185, 1387.584pt x 715.473pt>
 File: figures/GOES16_bands.png Graphic file (type png)
 <use figures/GOES16_bands.png>
 Package pdftex.def Info: figures/GOES16_bands.png  used on input line 223.
@@ -637,7 +637,7 @@ Package pdftex.def Info: figures/GOES16_bands.png  used on input line 223.
 Underfull \vbox (badness 2653) has occurred while \output is active []
 
  [6 <./figures/mei.png> <./figures/G16_v_G17.png>]
-<figures/timelapse_G17_2.png, id=168, 1445.4pt x 505.89pt>
+<figures/timelapse_G17_2.png, id=197, 1445.4pt x 505.89pt>
 File: figures/timelapse_G17_2.png Graphic file (type png)
 <use figures/timelapse_G17_2.png>
 Package pdftex.def Info: figures/timelapse_G17_2.png  used on input line 235.
@@ -648,7 +648,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [7 <./figures/GOES16_bands.png> <./figures/timelapse_G17_2.png>]
-<figures/D_m_vs_D_pl.png, id=194, 1558.3821pt x 451.6875pt>
+<figures/D_m_vs_D_pl.png, id=222, 1558.3821pt x 451.6875pt>
 File: figures/D_m_vs_D_pl.png Graphic file (type png)
 <use figures/D_m_vs_D_pl.png>
 Package pdftex.def Info: figures/D_m_vs_D_pl.png  used on input line 280.
@@ -668,31 +668,31 @@ T1/cmtt/m/n/10 https : / / github . com / qubvel /
  []
 
 [10]) [11]
-<stat_figs/sample_count_per_yr.png, id=246, 348.8232pt x 284.9847pt>
+<stat_figs/sample_count_per_yr.png, id=274, 348.8232pt x 284.9847pt>
 File: stat_figs/sample_count_per_yr.png Graphic file (type png)
 <use stat_figs/sample_count_per_yr.png>
 Package pdftex.def Info: stat_figs/sample_count_per_yr.png  used on input line 
 323.
 (pdftex.def)             Requested size: 227.62204pt x 185.9684pt.
-<stat_figs/sample_count_per_month.png, id=247, 347.3778pt x 270.7716pt>
+<stat_figs/sample_count_per_month.png, id=275, 347.3778pt x 270.7716pt>
 File: stat_figs/sample_count_per_month.png Graphic file (type png)
 <use stat_figs/sample_count_per_month.png>
 Package pdftex.def Info: stat_figs/sample_count_per_month.png  used on input li
 ne 329.
 (pdftex.def)             Requested size: 227.62204pt x 177.42487pt.
-<stat_figs/sample_count_per_state.png, id=248, 367.1316pt x 185.0112pt>
+<stat_figs/sample_count_per_state.png, id=276, 367.1316pt x 185.0112pt>
 File: stat_figs/sample_count_per_state.png Graphic file (type png)
 <use stat_figs/sample_count_per_state.png>
 Package pdftex.def Info: stat_figs/sample_count_per_state.png  used on input li
 ne 335.
 (pdftex.def)             Requested size: 284.52756pt x 143.38501pt.
-<stat_figs/sample_count_per_country.png, id=249, 395.076pt x 219.219pt>
+<stat_figs/sample_count_per_country.png, id=277, 395.076pt x 219.219pt>
 File: stat_figs/sample_count_per_country.png Graphic file (type png)
 <use stat_figs/sample_count_per_country.png>
 Package pdftex.def Info: stat_figs/sample_count_per_country.png  used on input 
 line 341.
 (pdftex.def)             Requested size: 284.52756pt x 157.88103pt.
-<stat_figs/IoU_per_month.png, id=251, 281.853pt x 216.5691pt>
+<stat_figs/IoU_per_month.png, id=279, 281.853pt x 216.5691pt>
 File: stat_figs/IoU_per_month.png Graphic file (type png)
 <use stat_figs/IoU_per_month.png>
 Package pdftex.def Info: stat_figs/IoU_per_month.png  used on input line 352.
@@ -702,23 +702,26 @@ onth.png> <./stat_figs/sample_count_per_state.png> <./stat_figs/sample_count_pe
 r_country.png>]
 Underfull \vbox (badness 4072) has occurred while \output is active []
 
- [14 <./stat_figs/IoU_per_month.png>] [15] [16] [17] [18] [19] [20] [21] [22] (
-./smoke.aux)
+ [14 <./stat_figs/IoU_per_month.png>] [15] [16]
+Underfull \vbox (badness 5637) has occurred while \output is active []
+
+ [17]
+[18] [19] [20] [21] [22] [23] [24] [25] (./smoke.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `smoke.out' has not changed.
-(rerunfilecheck)             Checksum: 1C066E0F3C4848BE21072BD0829A8EE2;1685.
+(rerunfilecheck)             Checksum: 3BACF0FA1C55BB60A04ADBA78DF81302;2701.
  ) 
 Here is how much of TeX's memory you used:
- 13858 strings out of 474963
- 214323 string characters out of 5774096
+ 13910 strings out of 474963
+ 214911 string characters out of 5774096
  1949187 words of memory out of 5000000
- 35602 multiletter control sequences out of 15000+600000
- 598941 words of font info for 203 fonts, out of 8000000 for 9000
+ 35609 multiletter control sequences out of 15000+600000
+ 600464 words of font info for 227 fonts, out of 8000000 for 9000
  725 hyphenation exceptions out of 8191
- 72i,10n,79p,2103b,779s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,10n,79p,2103b,729s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -729,10 +732,10 @@ hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist
 w/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on smoke.pdf (22 pages, 23059704 bytes).
+Output written on smoke.pdf (25 pages, 23072523 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 116 named destinations out of 1000 (max. 500000)
- 45197 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 45253 words of extra memory for PDF output out of 51595 (max. 10000000)
 
